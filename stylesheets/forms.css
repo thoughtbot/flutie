@@ -1,6 +1,7 @@
 /* Forms */
 
 label { font-weight: bold; }
+.checkbox_field label, .radio_field label { font-weight: normal; }
 
 /* Fieldsets */
 fieldset    { padding:1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
