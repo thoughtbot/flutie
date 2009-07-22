@@ -1,8 +1,10 @@
 /* Lists */
 
-ul, ol      { margin:0 1.5em 1.5em 1.5em; }
-ul          { list-style-type: circle; }
+ul, ol      { margin-bottom:  1.5em ; list-style-position: inside;}
+ul          { list-style-type: disc; }
 ol          { list-style-type: decimal; }
-dl          { margin: 0 0 1.5em 0; }
+dl          { margin-bottom: 1.5em; line-height: 1.4; }
 dl dt       { font-weight: bold; }
-dd          { margin-left: 1.5em;}
+dl dd       { margin-bottom: 1em;}
+li          {line-height: 1.4;}
+ol ul, ul ul, ul ol    {margin-left: 1em;}
