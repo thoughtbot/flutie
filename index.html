@@ -121,23 +121,25 @@
     <h2>Basic form styles</h2>
 
     <form id="dummy" action="" method="post">
-      <fieldset>
+      <fieldset class="inputs">
         <legend>Simple sample form</legend>
 
-        <div class="text_field">
-          <label for="dummy0">Text input (title)</label><br />
-          <input type="text" class="title" name="dummy0" id="dummy0" value="Field with class .title" />
-        </div>
+        <ol>
+          <li class="string required title" id="dummy0_input">
+            <label for="dummy0">Text input (title)<abbr title="required">*</abbr></label>
+            <input id="dummy0" name="dummy0" type="text" value="Field with class .title" />
+          </li>
 
-        <div class="text_field">
-          <label for="dummy1">Another field</label><br />
-          <input type="text" class="text" id="dummy1" name="dummy1" value="Field with class .text" />
-        </div>
+          <li class="string required" id="dummy0_input">
+            <label for="dummy1">Another field<abbr title="required">*</abbr></label>
+            <input id="dummy1" name="dummy1" type="text" value="Field with class .title" />
+          </li>
 
-        <div class="textarea_field">
-          <label for="dummy2">Textarea</label><br />
-          <textarea name="dummy2" id="dummy2" rows="5" cols="20"></textarea>
-        </div>
+          <li class="text required" id="dummy2_input">
+            <label for="dummy2">Textarea<abbr title="required">*</abbr></label>
+            <textarea cols="40" id="dummy2" name="dummy2" rows="20"></textarea>
+          </li>
+        </ol>
 
       </fieldset>
 
