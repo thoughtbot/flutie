@@ -3,22 +3,23 @@
 label { font-weight: bold; }
 .checkbox_field label, .radio_field label { font-weight: normal; }
 
+form .legend {margin-bottom: 1em;}
+a.cancel      {color: #7d0d0d;}
+
+
 /* Fieldsets */
-fieldset    { padding:1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
-legend      { font-weight: bold; font-size:1.2em; }
+fieldset           {margin: 0 0 1.5em 0; background: #f1f1f1; padding: 20px; border: 1px solid #e3e3e3;}
+fieldset fieldset  {padding: 0; border: 0;}
+legend             {font-weight: bold;}
 
 /* Text fields */
-input.text, input.title   { width: 300px; margin:0.5em 0.5em 0.5em 0; }
-input.text, input.title   { border:1px solid #bbb; background:#f6f6f6; padding:5px; }
-input.text:focus,
-input.title:focus         { border:1px solid #999; background:#fff; }
-input.title               { font-size:1.5em; }
+input[type="text"] {width: 300px; margin:0 0.5em 0.5em 0; }
+input[type="text"] {padding:5px; }
+
 
 /* Textareas */
-textarea            { width: 400px; height: 250px; margin:0.5em 0.5em 0.5em 0; }
-textarea            { border:1px solid #bbb; background:#eee; padding:5px; }
-textarea:focus      { border:1px solid #999; background:#fff; }
+textarea            {width: 440px; height: 200px; margin:0 0.5em 0.5em 0; padding:5px;}
 
 /* Select fields */
-select              { border:1px solid #ccc; background:#f6f6f6; width:200px; }
-select:focus        { border:1px solid #999; background:#fff; }
+select              { width:200px; }
+select:focus        { }
