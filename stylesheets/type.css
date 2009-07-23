@@ -18,7 +18,7 @@ p img.top   { margin-top: 0; } /* Use this if the image is at the top of the <p>
 img         { margin: 0 0 1.5em; }
 
 abbr, 
-acronym     { border-bottom: 1px dotted #666; }
+acronym     { border-bottom: 1px dotted #666; cursor: help; }
 address     { margin-top: 1.5em; font-style: italic; }
 del         { color:#666; }
 
