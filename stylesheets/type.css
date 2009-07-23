@@ -33,5 +33,5 @@ em,dfn      { font-style: italic;  }
 dfn         { font-weight: bold; }
 pre,code    { margin: 1.5em 0; white-space: pre; }
 pre,code,tt { font: 1em 'andale mono', 'monotype.com', 'lucida console', monospace; line-height: 1.5; }
-pre.code    { background: #000; color: #fff; }
+pre.code    { background: #000; color: #fff; padding: 20px;}
 tt          { display: block; margin: 1.5em 0; line-height: 1.5; }
