@@ -2,11 +2,11 @@
 
 h1,h2,h3,h4,h5,h6 { font-weight: bold; }
 
-h1 { font-size: 2.2em; line-height: 1; margin-bottom: 0.5em; }
-h2 { font-size: 1.6em; margin-bottom: 0.75em; }
-h3 { font-size: 1.3em; line-height: 1; margin-bottom: 1em; }
-h4 { font-size: 1.1em; line-height: 1.25; margin-bottom: 1.25em; }
-h5 { font-size: 1em; margin-bottom: 1.5em; }
+h1 { font-size: 2.2em; line-height: 1; margin-bottom: 0.25em; }
+h2 { font-size: 1.6em; margin-bottom: 0.25em; }
+h3 { font-size: 1.3em; line-height: 1; margin-bottom: .25em; }
+h4 { font-size: 1.1em; line-height: 1.25; margin-bottom: .25em; }
+h5 { font-size: 1em; margin-bottom: .25em; }
 h6 { font-size: 1em;  }
 
 /* Text elements */
@@ -22,13 +22,17 @@ acronym     { border-bottom: 1px dotted #666; cursor: help; }
 address     { margin-top: 1.5em; font-style: italic; }
 del         { color:#666; }
 
-a:focus, 
-a:hover     { color: #000; }
-a           { color: #009; text-decoration: underline; }
 
-blockquote  { margin: 1.5em; color: #666; font-style: italic; }
+
+a, a:link   {color: #1a4882; text-decoration: underline;}
+a:visited   {color: #1a4882;}
+a:hover     {color: #052246;}
+a:active, a:focus    {color: #1a4882;}
+
+
+blockquote  { margin: 1.5em 0; color: #666; font-style: italic; padding-left: 1em; border-left: 4px solid #d1d1d1;}
 strong      { font-weight: bold; }
-em,dfn      { font-style: italic; background: #ffc; }
+em,dfn      { font-style: italic;  }
 dfn         { font-weight: bold; }
 pre,code    { margin: 1.5em 0; white-space: pre; }
 pre,code,tt { font: 1em 'andale mono', 'monotype.com', 'lucida console', monospace; line-height: 1.5; }

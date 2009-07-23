@@ -8,7 +8,7 @@ a.cancel      {color: #7d0d0d;}
 
 
 /* Fieldsets */
-fieldset           {margin: 0 0 1.5em 0; background: #f1f1f1; padding: 20px; border: 1px solid #e3e3e3;}
+fieldset           {margin: 0 0 1.5em 0; background: #f1f1f1; padding: 1.5em 1.5em 1em 1.5em; border: 1px solid #e3e3e3;}
 fieldset fieldset  {padding: 0; border: 0;}
 legend             {font-weight: bold;}
 
