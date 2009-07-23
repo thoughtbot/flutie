@@ -28,7 +28,7 @@ fieldset.buttons li {display: inline;}
 .radio fieldset     {padding: 0; margin: 0;}
 
 /* Text fields */
-input[type="text"]     {width: 300px; padding:5px;  font-size: inherit;}
+input[type="text"],input[type="password"]    {width: 300px; padding:3px 2px;  font-size: inherit;}
 input[type="checkbox"] {margin: 0 3px 0 0; vertical-align: middle; position: relative; top: -2px;}
 input[type="radio"]    {margin: 0 3px 0 0; vertical-align: middle; position: relative; top: -2px;}
 .check_boxes label      {vertical-align: middle; padding: 0; display: inline;}
@@ -38,7 +38,7 @@ input[type="radio"]    {margin: 0 3px 0 0; vertical-align: middle; position: rel
 textarea            {width: 440px; height: 200px; margin:0 0.5em 0.5em 0; padding:5px; font-size: inherit;}
 
 /* Select fields */
-select              { width:200px; }
+select              { width:200px; font-size: .9em;} 
 select:focus        { }
 
 optgroup            {margin: 0 0 .5em 0;}
