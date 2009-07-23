@@ -7,7 +7,7 @@ ol          { list-style-type: decimal; }
 dl          { margin-bottom: 1.5em; line-height: 1.4; }
 dl dt       { font-weight: bold; margin-top: .5em;}
 dl dd       { margin-bottom: 0em;}
-dd          { margin-left: 1em; }
+dd          { margin-left: .5em; }
 
 li          {line-height: 1.4;}
 ol ol, ol ul, ul ul, ul ol {
