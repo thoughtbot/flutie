@@ -1,21 +1,39 @@
 /* Forms */
 
-label { font-weight: bold; }
+form ol             {list-style: none; margin: 0 0 1em 0;}
+form ol ol          {margin-left: 0;}
+form ol li          {margin: 0 0 1em 0;}
+form ol ol li       {margin: 0 0 .25em 0;}
+form ol li.error input {background: #FBE3E4;}
+p.inline-errors     {color: #D12F19;}
+
+
+form abbr           {border-bottom: 0;}
+                    
+label               {display: block;}
+.required label     {font-weight: bold;}
 .checkbox_field label, .radio_field label { font-weight: normal; }
 
-form .legend {margin-bottom: 1em;}
-a.cancel      {color: #7d0d0d;}
-.form_helper_text {font-size: .8em;color: #666; margin-bottom: .25em;}
+form .legend        {margin-bottom: 1em;}
+a.cancel            {color: #7d0d0d;}
+.inline-hints       {font-size: .8em;color: #666; margin-bottom: .25em;}
 
 /* Fieldsets */
-fieldset           {margin: 0 0 1.5em 0; background: #f1f1f1; padding: 1.5em 1.5em 1em 1.5em; border: 1px solid #e3e3e3;}
-fieldset fieldset  {padding: 0; border: 0;}
-legend             {font-weight: bold;}
+fieldset            {margin: 0 0 1.5em 0; background: #f1f1f1; padding: 1.5em 1.5em 1em 1.5em; border: 1px solid #e3e3e3;}
+fieldset fieldset,
+fieldset fieldset fieldset   {padding: 0; border: 0;}
+legend              {font-weight: bold;}
+fieldset.buttons    {background: inherit; border: 0; padding: 0;}
+fieldset.buttons li {display: inline;}
+.radio fieldset     {padding: 0; margin: 0;}
 
 /* Text fields */
-input[type="text"] {width: 300px; margin:0 0.5em 0.5em 0; }
-input[type="text"] {padding:5px; }
-
+input[type="text"]     {width: 300px;  }
+input[type="text"]     {padding:5px; }
+input[type="checkbox"] {margin: 0 3px 0 0; vertical-align: middle; position: relative; top: -2px;}
+input[type="radio"] {margin: 0 3px 0 0; vertical-align: middle; position: relative; top: -2px;}
+.check_boxes label      {vertical-align: middle; padding: 0; display: inline;}
+.radio       label     {padding: 0;}
 
 /* Textareas */
 textarea            {width: 440px; height: 200px; margin:0 0.5em 0.5em 0; padding:5px;}

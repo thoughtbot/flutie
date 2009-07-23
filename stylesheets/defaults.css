@@ -10,15 +10,15 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* Success, error & notice boxes for messages and errors. */
-.error,
-.notice, 
-.success    { padding: .8em; margin-bottom: 1em; border: 1px solid #ddd; -moz-border-radius: 8px; -webkit-border-radius: 8px;}
-.error      { background: #FBE3E4; color: #D12F19; border-color: #FBC2C4; }
-.notice     { background: #FFF6BF; color: #817134; border-color: #FFD324; }
-.success    { background: #E6EFC2; color: #529214; border-color: #C6D880; }
-.error a    { color: #D12F19; }
-.notice a   { color: #817134; }
-.success a  { color: #529214; }
+div.error,
+div.notice, 
+div.success    { padding: .8em; margin-bottom: 1em; border: 1px solid #ddd; -moz-border-radius: 8px; -webkit-border-radius: 8px;}
+div.error      { background: #FBE3E4; color: #D12F19; border-color: #FBC2C4; }
+div.notice     { background: #FFF6BF; color: #817134; border-color: #FFD324; }
+div.success    { background: #E6EFC2; color: #529214; border-color: #C6D880; }
+div.error a    { color: #D12F19; }
+div.notice a   { color: #817134; }
+div.success a  { color: #529214; }
 
 /* Misc classes and elements */
 
