@@ -28,10 +28,9 @@ fieldset.buttons li {display: inline;}
 .radio fieldset     {padding: 0; margin: 0;}
 
 /* Text fields */
-input[type="text"]     {width: 300px;  }
-input[type="text"]     {padding:5px; }
+input[type="text"]     {width: 300px; padding:5px;  font-size: inherit;}
 input[type="checkbox"] {margin: 0 3px 0 0; vertical-align: middle; position: relative; top: -2px;}
-input[type="radio"] {margin: 0 3px 0 0; vertical-align: middle; position: relative; top: -2px;}
+input[type="radio"]    {margin: 0 3px 0 0; vertical-align: middle; position: relative; top: -2px;}
 .check_boxes label      {vertical-align: middle; padding: 0; display: inline;}
 .radio       label     {padding: 0;}
 
