@@ -14,7 +14,7 @@ label               {display: block;}
 .required label     {font-weight: bold;}
 .checkbox_field label, .radio_field label { font-weight: normal; }
 
-form .legend        {margin-bottom: 1em;}
+form .legend        {}
 a.cancel            {color: #7d0d0d;}
 .inline-hints       {font-size: .8em;color: #666; margin-bottom: .25em;}
 
@@ -41,3 +41,33 @@ textarea            {width: 440px; height: 200px; margin:0 0.5em 0.5em 0; paddin
 /* Select fields */
 select              { width:200px; }
 select:focus        { }
+
+optgroup            {margin: 0 0 .5em 0;}
+
+/* Date & Time */
+
+
+form ol li.date ol li,    
+form ol li.time ol li{
+  display: inline;
+}
+    
+form ol li.datetime ol li {
+  display: inline-block;
+}
+
+form ol li.datetime select,
+form ol li.date     select,
+form ol li.time     select{
+  display: inline;
+  width: auto;
+  
+}
+
+
+form ol li.date     label,
+form ol li.time     label{
+  display: none;
+  
+}
+
