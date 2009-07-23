@@ -5,7 +5,7 @@ label { font-weight: bold; }
 
 form .legend {margin-bottom: 1em;}
 a.cancel      {color: #7d0d0d;}
-
+.form_helper_text {font-size: .8em;color: #666; margin-bottom: .25em;}
 
 /* Fieldsets */
 fieldset           {margin: 0 0 1.5em 0; background: #f1f1f1; padding: 1.5em 1.5em 1em 1.5em; border: 1px solid #e3e3e3;}
