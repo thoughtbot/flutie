@@ -35,7 +35,7 @@ input[type="radio"]    {margin: 0 3px 0 0; vertical-align: middle; position: rel
 .radio       label     {padding: 0;}
 
 /* Textareas */
-textarea            {width: 440px; height: 200px; margin:0 0.5em 0.5em 0; padding:5px;}
+textarea            {width: 440px; height: 200px; margin:0 0.5em 0.5em 0; padding:5px; font-size: inherit;}
 
 /* Select fields */
 select              { width:200px; }
