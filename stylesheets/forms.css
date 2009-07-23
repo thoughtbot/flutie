@@ -6,7 +6,7 @@ form ol li          {margin: 0 0 1em 0;}
 form ol ol li       {margin: 0 0 .25em 0;}
 form ol li.error input {background: #FBE3E4;}
 p.inline-errors     {color: #D12F19;}
-
+form ol li.file     {background: #e1e1e1; border: 1px solid #c8c8c8; padding: 10px;}
 
 form abbr           {border-bottom: 0;}
                     
