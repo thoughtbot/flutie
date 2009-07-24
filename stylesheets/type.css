@@ -3,7 +3,7 @@
 h1,h2,h3,h4,h5,h6 { font-weight: bold; }
 
 h1 { font-size: 2.2em; line-height: 1; margin-bottom: 0.25em; }
-h2 { font-size: 1.6em; margin-bottom: 0.25em; }
+h2 { font-size: 1.6em; margin-bottom: 0.25em; line-height: 1.1; }
 h3 { font-size: 1.3em; line-height: 1; margin-bottom: .25em; }
 h4 { font-size: 1.1em; line-height: 1.25; margin-bottom: .25em; }
 h5 { font-size: 1em;   margin-bottom: .25em; }
