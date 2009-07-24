@@ -29,6 +29,7 @@ fieldset.buttons li {display: inline;}
 
 /* Text fields */
 input[type="text"],input[type="password"]    {width: 300px; padding:3px 2px;  font-size: inherit;}
+input[disabled='disabled']  {background-color: #fcfcfc; cursor:default;}
 input[type="checkbox"] {margin: 0 3px 0 0; vertical-align: middle; position: relative; top: -2px;}
 input[type="radio"]    {margin: 0 3px 0 0; vertical-align: middle; position: relative; top: -2px;}
 .check_boxes label      {vertical-align: middle; padding: 0; display: inline;}
