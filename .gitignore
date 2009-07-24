@@ -1,0 +1,13 @@
+log/*
+tmp/**/*
+tmp/
+db/schema.rb
+db/*.sqlite3
+public/system
+*.DS_Store
+coverage/*
+coverage*
+*.swp
+public/announcement.html
+
+!.keep
