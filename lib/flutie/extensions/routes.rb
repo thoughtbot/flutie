@@ -1,4 +1,4 @@
-if defined?(ActionController::Routing::RouteSet)
+if defined?(ActionController::Routing::RouteSet) && defined?(Rails) && !Rails.env.production?
   class ActionController::Routing::RouteSet
     def load_routes_with_flutie!
       lib_path = File.dirname(__FILE__)
