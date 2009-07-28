@@ -6,7 +6,7 @@ require 'active_support/test_case'
 require 'action_controller'
 require 'test_help'
 require 'flutie'
-require 'init'
+require 'config/flutie_expansion'
 
 $LOAD_PATH << File.join(File.dirname(__FILE__), '..', 'app', 'controllers')
 

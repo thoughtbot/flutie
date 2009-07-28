@@ -12,4 +12,8 @@ end
 
 directory = File.dirname(__FILE__)
 
+# Copy the flutie stylesheets into rails_root/public/flutie
 copy_files("/public/stylesheets", "/public/flutie", directory)
+
+# Copy the stylesheet expansion into rails_root/config/initializers
+copy_files("/config/flutie_expansion.rb", "/config/initializers", directory)
