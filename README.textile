@@ -10,11 +10,15 @@ Flutie is recommended to be run as a plugin so that the automatic installer is r
 
 script/plugin install 
 
-The installer will copy the flutie stylesheets into public/flutie/stylesheets
+The installer will copy the Flutie stylesheets into public/Flutie/stylesheets
 
 Once Flutie is installed, with your application running (not in production environment) you can browse to /styleguide.  This will present you will many standard markup elements that are present in rails application, in your default application layout.
 
-Click on the "Default styles" link to view the same markup with a barebones layout that only contains the flutie stylesheets. Click on "Application styles" to view the markup in your application layout.
+Click on the "Default styles" link to view the same markup with a barebones layout that only contains the Flutie stylesheets. Click on "Application styles" to view the markup in your application layout.
+
+h2. Gem Installation
+
+You can also install Flutie as a gem, but then you'll need to run the install task manually.
 
 In config/environment.rb:
 
@@ -30,6 +34,12 @@ Vendor the gem:
 <pre>
 rake gems:install
 rake gems:unpack
+</pre>
+
+Run the installer:
+
+<pre>
+ruby vendor/gems/thoughtbot-flutie-1.0.0/install.rb
 </pre>
 
 h2. 
