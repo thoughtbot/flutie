@@ -1,40 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link rel="stylesheet" href="stylesheets/reset.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="stylesheets/defaults.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="stylesheets/type.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="stylesheets/forms.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="stylesheets/tables.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="stylesheets/lists.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" />
-  <title>Flutie v1</title>
+<div style="padding: 15px; text-align: right;">
+  <% if params[:flutie] -%>
+    <%= link_to "Application Styles", :flutie => false %>
+  <% else -%>
+    <%= link_to "Default Styles", :flutie => true %>
+  <% end -%>
+</div>
 
-  <style type="text/css">
-  /* These are styles to make the page look nice */
-
-  body { background-color: #dadada;}
-  .content {
-    background: #fff;
-    padding: 40px;
-    margin: 40px auto;
-    width: 880px;
-    -moz-border-radius: 24px;
-    -webkit-border-radius: 24px;
-  }
-  </style>
-
-</head>
-
-<body>
-  
-
- 
-  <div class="content">
-
-    <h1>This is an example page of our basic styles</h1>
+<h1>This is an example page of our basic styles</h1>
     <h2>This is an h2 level heading</h2>
 
     <p>Wolbachia pipientis is a maternally transmitted obligate intracellular bacterium that chronically infects thousands of insect species, as well as a range of other arthropods and filarial nematodes. Wolbachia bacteria can induce various reproductive abnormalities in hosts that promote the bacteria's vertical transmission and spread. The discordance of host and Wolbachia phylogenies indicates that these bacteria have moved between host lineages on <a href="#">multiple occasions</a> during their evolutionary history, although the mechanisms that facilitate the transfer of Wolbachia are not well understood. The success of such host shifts is inherently reliant on the ability of the bacteria to adapt to new intracellular environments.</p>
@@ -74,11 +46,6 @@
 
         <p>After recording their behavior with two video cameras aiming down on an insect-size stage, she analyzed 300 hours of videotape of the ants in action. She discovered behavior more worthy of Aesop’s grasshopper than the proverbial industrious ants.</p>
 
-
-
-
-  </div>
-  <div class="content">
 
     <h2>List styles</h2>
 
@@ -134,11 +101,6 @@
 
 
 
-
- 
-  </div>
-
-  <div class="content">
 
     <h2>Basic form styles</h2>
 
@@ -642,10 +604,6 @@
 
     </form>
 
-  </div>
-
-  <div class="content">
-
     <h2>Miscellaneous Styles</h2>
 
     <div class="error">
@@ -679,10 +637,6 @@
       Box 555<br />
       Disneyland
     </address>
-
-  </div>
-
-  <div class="content">
 
     <h2>Table Styles</h2>
 
@@ -744,10 +698,6 @@
       </tbody>
     </table>
 
-  </div>
-
-  <div class="content">
-
     <h2>Code Styles</h2>
 
     <pre>&lt;pre&gt;
@@ -775,9 +725,3 @@ end</code></pre>
       even though the code has newlines, spaces, and tabs. 
       It should be the same size as &lt;p&gt; text.
     </tt>
-
-
-  </div>
-
-</body>
-</html>
