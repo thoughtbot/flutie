@@ -1,13 +1,23 @@
 /* Tables */
 
-table   { margin-bottom: 2em; width: 100%; }
-th      { border-bottom: 2px solid #ccc; font-weight: bold; text-align: left; }
-td      { border-bottom: 1px solid #ddd; }
-caption, th,td {
+table {
+  margin-bottom: 2em;
+  width: 100%;
+}
+th {
+  border-bottom: 2px solid #ccc;
+  font-weight: bold;
+  text-align: left;
+}
+td { border-bottom: 1px solid #ddd; }
+caption, th, td {
   padding: 4px 10px 4px 0;
 }
-tfoot   { }
-caption { background: #f1f1f1; padding: 10px 0; margin-bottom: 1em; }
+caption {
+  background: #f1f1f1;
+  padding: 10px 0;
+  margin-bottom: 1em;
+}
 
 /* Use this if you use span-x classes on th/td. */
 table .last { padding-right: 0; } 

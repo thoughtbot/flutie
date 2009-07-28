@@ -1,73 +1,113 @@
 /* Forms */
 
-form ol             {list-style: none; margin: 0 0 1em 0;}
-form ol ol          {margin-left: 0;}
-form ol li          {margin: 0 0 1em 0;}
-form ol ol li       {margin: 0 0 .25em 0;}
-form ol li.error input {background: #FBE3E4;}
-p.inline-errors     {color: #D12F19;}
-form ol li.file     {background: #e1e1e1; border: 1px solid #c8c8c8; padding: 10px;}
+form ol {
+  list-style: none;
+  margin: 0 0 1em 0;
+}
+form ol ol { margin-left: 0; }
+form ol li { margin: 0 0 1em 0; }
+form ol ol li { margin: 0 0 .25em 0; }
 
-form abbr           {border-bottom: 0;}
-                    
-label               {display: block;}
-.required label     {font-weight: bold;}
+form ol li.error input { background: #FBE3E4; }
+p.inline-errors { color: #D12F19; }
+form ol li.file {
+  background: #e1e1e1;
+  border: 1px solid #c8c8c8;
+  padding: 10px;
+}
+
+form abbr { border-bottom: 0; }
+
+label { display: block; }
+.required label { font-weight: bold; }
 .checkbox_field label, .radio_field label { font-weight: normal; }
 
-form .legend        {}
-a.cancel            {color: #7d0d0d;}
-.inline-hints       {font-size: .8em;color: #666; margin-bottom: .25em;}
+a.cancel { color: #7d0d0d; }
+.inline-hints {
+  font-size: .8em;
+  color: #666;
+  margin-bottom: .25em;
+}
 
 /* Fieldsets */
-fieldset            {margin: 0 0 1.5em 0; background: #f1f1f1; padding: 1.5em 1.5em 1em 1.5em; border: 1px solid #e3e3e3;}
-fieldset fieldset,
-fieldset fieldset fieldset   {padding: 0; border: 0;}
-legend              {font-weight: bold;}
-fieldset.buttons    {background: inherit; border: 0; padding: 0;}
-fieldset.buttons li {display: inline;}
-.radio fieldset     {padding: 0; margin: 0;}
+fieldset {
+  margin: 0 0 1.5em 0;
+  background: #f1f1f1;
+  padding: 1.5em 1.5em 1em 1.5em;
+  border: 1px solid #e3e3e3;
+}
+fieldset fieldset, fieldset fieldset fieldset {
+  padding: 0;
+  border: 0;
+}
+legend { font-weight: bold; }
+fieldset.buttons {
+  background: inherit;
+  border: 0;
+  padding: 0;
+}
+fieldset.buttons li { display: inline; }
+.radio fieldset {
+  padding: 0;
+  margin: 0;
+}
 
 /* Text fields */
-input[type="text"],input[type="password"]    {width: 300px; padding:3px 2px;  font-size: inherit;}
-input[disabled='disabled']  {background-color: #fcfcfc; cursor:default;}
-input[type="checkbox"] {margin: 0 3px 0 0; vertical-align: middle; position: relative; top: -2px;}
-input[type="radio"]    {margin: 0 3px 0 0; vertical-align: middle; position: relative; top: -2px;}
-.check_boxes label      {vertical-align: middle; padding: 0; display: inline;}
-.radio       label     {padding: 0;}
-
-/* Textareas */
-textarea            {width: 440px; height: 200px; margin:0 0.5em 0.5em 0; padding:5px; font-size: inherit;}
-
-/* Select fields */
-fieldset .select select              { width:200px; font-size: .9em;} 
-select:focus        { }
-
-optgroup            {margin: 0 0 .5em 0;}
-
-/* Date & Time */
-
-
-form ol li.date ol li,    
-form ol li.time ol li{
+input[type="text"], input[type="password"] {
+  width: 300px;
+  padding: 3px 2px;
+  font-size: inherit;
+}
+input[disabled='disabled'] {
+  background-color: #fcfcfc;
+  cursor:default;
+}
+input[type="checkbox"] {
+  margin: 0 3px 0 0;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+input[type="radio"] {
+  margin: 0 3px 0 0;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+.check_boxes label {
+  vertical-align: middle;
+  padding: 0;
   display: inline;
 }
-    
+.radio label { padding: 0; }
+
+/* Textareas */
+textarea {
+  width: 440px;
+  height: 200px;
+  margin: 0 0.5em 0.5em 0;
+  padding: 5px;
+  font-size: inherit;
+}
+
+/* Select fields */
+fieldset .select select {
+  width:200px;
+  font-size: .9em;
+} 
+optgroup { margin: 0 0 .5em 0; }
+
+/* Date & Time */
+form ol li.date ol li, form ol li.time ol li {
+  display: inline;
+}
 form ol li.datetime ol li {
   display: inline-block;
 }
-
-form ol li.datetime select,
-form ol li.date     select,
-form ol li.time     select{
+form ol li.datetime select, form ol li.date select, form ol li.time select {
   display: inline;
   width: auto;
-  
 }
-
-
-form ol li.date     label,
-form ol li.time     label{
+form ol li.date label, form ol li.time label {
   display: none;
-  
 }
-
