@@ -11,3 +11,4 @@ $LOAD_PATH << File.join(File.dirname(__FILE__), '..', 'app', 'controllers')
 
 require 'shoulda'
 require 'shoulda/rails'
+begin require 'redgreen'; rescue LoadError; end
