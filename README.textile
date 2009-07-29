@@ -26,24 +26,24 @@ Flutie registers a :flutie shortcut for stylesheets, so in your layout you can d
 
 To add custom styles to the styleguide add partials to the app/views/styleguides directory. For example:
 
-  app/views/styleguides/_todo_item.erb:
+bc. app/views/styleguides/_todo_item.erb:
 
-  <ol>
-    <li class="todo">This is a todo item</li>
-  </ol>
+bc.. <ol>
+  <li class="todo">This is a todo item</li>
+</ol>
 
-Plugin authors can also add to the styleguide by ensuring that their view path
+p. Plugin authors can also add to the styleguide by ensuring that their view path
 is in ActionController::Base.view_paths and by placing a partial under the
 styleguides directory. For example:
 
-  ActionController::Base.append_view_path(File.join(File.dirname(__FILE__), 'views'))
+bc. ActionController::Base.append_view_path(File.join(File.dirname(__FILE__), 'views'))
 
-  my_awesome_plugin/views/styleguides/_pagination.erb:
+bc. my_awesome_plugin/views/styleguides/_pagination.erb:
 
-  <div class="pagination">
-    <a href="#prev">Previous</a>
-    <a href="#next">Next</a>
-  </div>
+bc.. <div class="pagination">
+  <a href="#prev">Previous</a>
+  <a href="#next">Next</a>
+</div>
 
 h2. Gem Installation
 
