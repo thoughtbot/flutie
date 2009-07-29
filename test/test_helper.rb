@@ -7,6 +7,7 @@ require 'action_controller'
 require 'test_help'
 require 'flutie'
 require 'config/flutie_expansion'
+require 'rexml/document'
 
 $LOAD_PATH << File.join(File.dirname(__FILE__), '..', 'app', 'controllers')
 
