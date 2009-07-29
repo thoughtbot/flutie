@@ -731,4 +731,12 @@ end</code></pre>
     It should be the same size as &lt;p&gt; text.
   </tt>
 
+<hr />
+<h1>Additional Styleguides</h1>
+<hr />
+
+<% @styleguides.each do |styleguide| %>
+  <%= render :file => styleguide %>
+<% end %>
+
 </div>
