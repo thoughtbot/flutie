@@ -1,36 +1,30 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link rel="stylesheet" href="/flutie/stylesheets/reset.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="/flutie/stylesheets/defaults.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="/flutie/stylesheets/type.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="/flutie/stylesheets/forms.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="/flutie/stylesheets/tables.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="/flutie/stylesheets/lists.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="/flutie/stylesheets/screen.css" type="text/css" media="screen" />
-  <title>Flutie v1</title>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <%= stylesheet_link_tag :flutie %>
+    <title>Flutie v1</title>
 
-  <style type="text/css">
-  /* These are styles to make the page look nice */
+    <style type="text/css">
+    /* These are styles to make the page look nice */
 
-  body { background-color: #dadada;}
-  .content {
-    background: #fff;
-    padding: 40px;
-    margin: 40px auto;
-    width: 880px;
-    -moz-border-radius: 24px;
-    -webkit-border-radius: 24px;
-  }
-  </style>
+    body { background-color: #dadada;}
+    .content {
+      background: #fff;
+      padding: 40px;
+      margin: 40px auto;
+      width: 880px;
+      -moz-border-radius: 24px;
+      -webkit-border-radius: 24px;
+    }
+    </style>
 
-</head>
+  </head>
 
-<body>
-  <div class="content">
-    <%= yield %>
-  </div>
-</body>
+  <body>
+    <div class="content">
+      <%= yield %>
+    </div>
+  </body>
 </html>
