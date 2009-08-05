@@ -33,10 +33,6 @@ h6 {
 
 /* Text elements */
 
-p, div {
-  margin: 0 0 1em;
-  line-height: 1.4;
-}
 p.last { margin-bottom: 0; }
 p img {
   float: left;
