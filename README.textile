@@ -53,7 +53,7 @@ In config/environment.rb:
 
 <pre>
 config.gem "thoughtbot-flutie", 
-  :lib     => 'clearance', 
+  :lib     => 'flutie', 
   :source  => 'http://gems.github.com', 
   :version => '1.0.0'
 </pre>
