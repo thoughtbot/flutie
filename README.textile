@@ -8,7 +8,7 @@ Flutie is a Rails engine. It works with versions of Rails greater than 2.3.
 
 Flutie is recommended to be run as a plugin so that the automatic installer is run.
 
-script/plugin install git@github.com:thoughtbot/flutie.git
+  $ ruby script/plugin install -f git@github.com:thoughtbot/flutie.git
 
 The installer will copy the Flutie stylesheets into public/flutie/stylesheets
 
