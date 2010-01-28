@@ -19,5 +19,9 @@ caption {
   margin-bottom: 1em;
 }
 
+tr,td,th {
+  vertical-align: middle;
+}
+
 /* Use this if you use span-x classes on th/td. */
 table .last { padding-right: 0; } 
