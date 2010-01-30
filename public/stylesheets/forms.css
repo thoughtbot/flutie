@@ -1,5 +1,9 @@
 /* Forms */
 
+input[type="submit"]::-moz-focus-inner {
+        border: none;
+} /*removes dotted outline on submit buttons when clicking in firefox */
+
 form ol {
   list-style: none;
   margin: 0 0 1em 0;
