@@ -9,7 +9,7 @@ form ol {
   margin: 0 0 1em 0;
 }
 form ol ol { margin-left: 0; }
-form ol li { margin: 0 0 1em 0; }
+form ol li { margin: 0 0 1em 0; list-style-position: outside; }
 form ol ol li { margin: 0 0 .25em 0; list-style-position: outside; } /*list-style-position fixes IE label margin bug*/
 
 form ol li.error input { background: #FBE3E4; }
