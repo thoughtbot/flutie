@@ -1,69 +1,11 @@
---- !ruby/object:Gem::Specification 
-name: flutie
-version: !ruby/object:Gem::Version 
-  version: 0.6.9
-platform: ruby
-authors: 
-- thoughtbot
-autorequire: 
-bindir: bin
-cert_chain: []
-
-date: 2009-07-24 00:00:00 -04:00
-default_executable: 
-dependencies: []
-
-description: Default application styles
-email: support@thoughtbot.com
-executables: []
-
-extensions: []
-
-extra_rdoc_files: []
-
-files: 
-- LICENSE
-- Rakefile
-- README.textile
-- app/controllers
-- app/controllers/flutie
-- app/controllers/flutie/styleguides_controller.rb
-- app/views
-- app/views/styleguides
-- app/views/styleguides/show.html.erb
-- config/flutie_routes.rb
-- lib/flutie
-- lib/flutie/extensions
-- lib/flutie/extensions/routes.rb
-- lib/flutier.rb
-- rails/init.rb
-has_rdoc: true
-homepage: http://github.com/thoughtbot/flutie
-licenses: []
-
-post_install_message: 
-rdoc_options: []
-
-require_paths: 
-- lib
-required_ruby_version: !ruby/object:Gem::Requirement 
-  requirements: 
-  - - ">="
-    - !ruby/object:Gem::Version 
-      version: "0"
-  version: 
-required_rubygems_version: !ruby/object:Gem::Requirement 
-  requirements: 
-  - - ">="
-    - !ruby/object:Gem::Version 
-      version: "0"
-  version: 
-requirements: []
-
-rubyforge_project: 
-rubygems_version: 1.3.4
-signing_key: 
-specification_version: 3
-summary: Default application styles
-test_files: []
-
+Gem::Specification.new do |s|
+  s.name = 'flutie'
+  s.version = '1.0.0'
+  s.date = %q{2010-04-06}
+  s.email = 'support@thoughtbot.com'
+  s.homepage = 'http://github.com/thoughtbot/flutie'
+  s.summary = 'Flutie adds default stylesheets to web apps'
+  s.description = 'Flutie is a starting point for personal discovery'
+  s.files = ["app/controllers", "app/controllers/flutie", "app/controllers/flutie/styleguides_controller.rb", "app/views", "app/views/flutie", "app/views/flutie/styleguides", "app/views/flutie/styleguides/show.erb", "app/views/layouts", "app/views/layouts/flutie.erb", "config/initializers", "config/initializers/expansion.rb", "config/routes.rb", "lib/flutie", "lib/flutie/engine.rb", "lib/flutie.rb", "lib/tasks", "lib/tasks/flutie.rake", "README.textile"]
+  s.authors = ['Chad Pytel', 'Kevin Burg', 'Matt Jankowski', 'Mike Burns', 'Fred Yates']
+end

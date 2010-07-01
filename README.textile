@@ -4,11 +4,11 @@ Basic, default styles for rails applications
 
 h2. Installation
 
-Flutie is a Rails engine. It works with versions of Rails greater than 2.3.
+Flutie is a Rails engine. It works with versions of Rails greater than 3.0.
 
-Flutie is recommended to be run as a plugin so that the automatic installer is run.
+Flutie is recommended to be run as a gem and included in your Gemfile.
 
-  $ ruby script/plugin install -f git@github.com:thoughtbot/flutie.git
+  $ rake flutie:install
 
 The installer will copy the Flutie stylesheets into public/flutie/stylesheets
 
@@ -44,34 +44,6 @@ bc.. <div class="pagination">
   <a href="#prev">Previous</a>
   <a href="#next">Next</a>
 </div>
-
-h2. Gem Installation
-
-You can also install Flutie as a gem, but then you'll need to run the install task manually.
-
-In config/environment.rb:
-
-<pre>
-config.gem "thoughtbot-flutie", 
-  :lib     => 'flutie', 
-  :source  => 'http://gems.github.com', 
-  :version => '1.0.0'
-</pre>
-
-Vendor the gem:
-
-<pre>
-rake gems:install
-rake gems:unpack
-</pre>
-
-Run the installer:
-
-<pre>
-ruby vendor/gems/thoughtbot-flutie-1.0.0/install.rb
-</pre>
-
-h2. 
 
 h2. Authors
 
