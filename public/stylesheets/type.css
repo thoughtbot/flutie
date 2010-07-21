@@ -32,7 +32,7 @@ h6 {
 }
 
 /* Text elements */
-
+p { margin-bottom: 0.5em; }
 p.last { margin-bottom: 0; }
 p img {
   float: left;
