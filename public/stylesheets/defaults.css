@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Success, error & notice boxes for messages and errors. */
 div.error, div.notice, div.success,
 #flash_failure, #flash_success, #flash_notice {
-  padding: .8em;
+  padding: 0.8em;
   margin-bottom: 1em;
   border: 1px solid #ddd;
   -moz-border-radius: 8px;

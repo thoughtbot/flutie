@@ -28,9 +28,9 @@ label { display: block; }
 
 a.cancel { color: #7d0d0d; }
 .inline-hints {
-  font-size: .8em;
+  font-size: 0.8em;
   color: #666;
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
 
 /* Fieldsets */
@@ -97,7 +97,7 @@ textarea {
 /* Select fields */
 fieldset .select select {
   width:200px;
-  font-size: .9em;
+  font-size: 0.9em;
 } 
 optgroup { margin: 0 0 .5em 0; }
 

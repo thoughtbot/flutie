@@ -13,10 +13,10 @@ dl {
 }
 dl dt {
   font-weight: bold;
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 dl dd { margin-bottom: 0em;}
-dd { margin-left: .5em; }
+dd { margin-left: 0.5em; }
 
 li { line-height: 1.4; }
 

@@ -15,20 +15,20 @@ h2 {
 h3 {
   font-size: 1.3em;
   line-height: 1;
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
 h4 {
   font-size: 1.1em;
   line-height: 1.25;
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
 h5 {
   font-size: 1em;
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
 h6 {
   font-size: 1em;
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
 
 /* Text elements */
