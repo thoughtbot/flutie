@@ -15,58 +15,66 @@ div.error, div.notice, div.success,
   border: 1px solid #ddd;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
-  padding: 0.8em;
   margin-bottom: 1em;
+  padding: 0.8em;
 }
 
 div.error,
 #flash_failure {
   background: #FBE3E4;
-  color: #D12F19;
   border-color: #FBC2C4;
+  color: #D12F19;
 }
 
 div.error a,
-#flash_failure a { color: #D12F19; }
+#flash_failure a {
+  color: #D12F19;
+}
 
 div.notice,
 #flash_notice {
   background: #FFF6BF;
-  color: #817134;
   border-color: #FFD324;
+  color: #817134;
 }
+
 div.notice a,
-#flash_notice a { color: #817134; }
+#flash_notice a {
+  color: #817134;
+}
 
 div.success,
 #flash_success {
   background: #E6EFC2;
-  color: #529214;
   border-color: #C6D880;
+  color: #529214;
 }
+
 div.success a,
-#flash_success a { color: #529214; }
+#flash_success a {
+  color: #529214;
+}
 
 /* Misc classes and elements */
-
 /* Use a .box to create a padded box inside a column.  */
 .box {
-  padding: 1.5em;
-  margin-bottom: 1.5em;
   background: #eee;
+  margin-bottom: 1.5em;
+  padding: 1.5em;
 }
 
 /* Use this to create a horizontal ruler across a column. */
 hr {
   background: #ddd;
-  color: #ddd;
+  border: none;
   clear: both;
+  color: #ddd;
   float: none;
-  width: 100%;
   height: 1px;
   margin: 0 0 1.4em;
-  border: none;
+  width: 100%;
 }
+
 hr.space {
   background: #fff;
   color: #fff;
