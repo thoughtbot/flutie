@@ -57,7 +57,20 @@ fieldset.buttons li { display: inline; }
 }
 
 /* Text fields */
-input[type="text"], input[type="password"] {
+input[type="text"],
+input[type="password"]
+input[type="email"],
+input[type="number"],
+input[type="range"],
+input[type="search"],
+input[type="color"],
+input[type="url"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"] {
   width: 300px;
   padding: 3px 2px;
   font-size: inherit;
