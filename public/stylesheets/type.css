@@ -1,6 +1,7 @@
 /* Headings */
-
-h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
 
 h1 {
   font-size: 2.2em;
@@ -37,9 +38,13 @@ h6 {
 }
 
 /* Text elements */
-p { margin-bottom: 0.5em; }
+p {
+  margin-bottom: 0.5em;
+}
 
-p.last { margin-bottom: 0; }
+p.last {
+  margin-bottom: 0;
+}
 
 p img {
   float: left;
@@ -47,9 +52,14 @@ p img {
   padding: 0;
 }
 
-p img.top { margin-top: 0; } /* Use this if the image is at the top of the <p>. */
+/* Use this if the image is at the top of the <p>. */
+p img.top {
+  margin-top: 0;
+}
 
-img { margin: 0 0 1.5em; }
+img {
+  margin: 0 0 1.5em;
+}
 
 abbr, acronym {
   border-bottom: 1px dotted #666;
@@ -61,16 +71,27 @@ address {
   margin-top: 1.5em;
 }
 
-del { color:#666; }
+del {
+  color:#666;
+}
 
 a, a:link {
   color: #1a4882;
   text-decoration: underline;
 }
 
-a:visited { color: #1a4882; }
-a:hover { color: #052246; }
-a:active, a:focus { color: #1a4882; }
+a:visited {
+  color: #1a4882;
+}
+
+a:hover {
+  color: #052246;
+}
+
+a:active,
+a:focus {
+  color: #1a4882;
+}
 
 blockquote {
   border-left: 4px solid #d1d1d1;
@@ -80,11 +101,18 @@ blockquote {
   padding-left: 1em;
 }
 
-strong { font-weight: bold; }
+strong {
+  font-weight: bold;
+}
 
-em, dfn { font-style: italic;  }
+em,
+dfn {
+  font-style: italic;
+}
 
-dfn { font-weight: bold; }
+dfn {
+  font-weight: bold;
+}
 
 pre, code {
   margin: 1.5em 0;
