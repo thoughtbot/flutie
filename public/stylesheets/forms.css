@@ -100,21 +100,21 @@ fieldset.buttons li {
 }
 
 /* Text fields */
-input[type="text"],
-input[type="password"]
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
 input[type="email"],
+input[type="month"],
 input[type="number"],
+input[type="password"]
 input[type="range"],
 input[type="search"],
-input[type="color"],
-input[type="url"],
 input[type="tel"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
+input[type="text"],
 input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"] {
+input[type="url"],
+input[type="week"] {
   font-size: inherit;
   padding: 3px 2px;
   width: 300px;
