@@ -1,0 +1,458 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0; }
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  color: #222;
+  font-size: 13px;
+  font-family: arial, "helvetica neue", helvetica, "lucida grande", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #111;
+  font-family: "helvetica neue", Helvetica, arial, sans-serif; }
+
+/* Success, error & notice boxes for messages and errors. */
+div.error, div.notice, div.success,
+#flash_failure, #flash_success, #flash_notice {
+  border: 1px solid #ddd;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  margin-bottom: 1em;
+  padding: 0.8em; }
+
+div.error,
+#flash_failure {
+  background: #FBE3E4;
+  border-color: #FBC2C4;
+  color: #D12F19; }
+
+div.error a,
+#flash_failure a {
+  color: #D12F19; }
+
+div.notice,
+#flash_notice {
+  background: #FFF6BF;
+  border-color: #FFD324;
+  color: #817134; }
+
+div.notice a,
+#flash_notice a {
+  color: #817134; }
+
+div.success,
+#flash_success {
+  background: #E6EFC2;
+  border-color: #C6D880;
+  color: #529214; }
+
+div.success a,
+#flash_success a {
+  color: #529214; }
+
+/* Misc classes and elements */
+/* Use a .box to create a padded box inside a column.  */
+.box {
+  background: #eee;
+  margin-bottom: 1.5em;
+  padding: 1.5em; }
+
+/* Use this to create a horizontal ruler across a column. */
+hr {
+  background: #ddd;
+  border: none;
+  clear: both;
+  color: #ddd;
+  float: none;
+  height: 1px;
+  margin: 0 0 1.4em;
+  width: 100%; }
+
+hr.space {
+  background: #fff;
+  color: #fff; }
+
+/* Clearfix hack I love you */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clearfix {
+  display: inline-block; }
+
+/* Hide from IE Mac \*/
+.clearfix {
+  display: block; }
+
+/* End hide from IE Mac */
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; }
+
+h1 {
+  font-size: 2.2em;
+  line-height: 1;
+  margin-bottom: 0.25em; }
+
+h2 {
+  font-size: 1.6em;
+  line-height: 1.1;
+  margin-bottom: 0.25em; }
+
+h3 {
+  font-size: 1.3em;
+  line-height: 1;
+  margin-bottom: 0.25em; }
+
+h4 {
+  font-size: 1.1em;
+  line-height: 1.25;
+  margin-bottom: 0.25em; }
+
+h5 {
+  font-size: 1em;
+  margin-bottom: 0.25em; }
+
+h6 {
+  font-size: 1em;
+  margin-bottom: 0.25em; }
+
+/* Text elements */
+p {
+  margin-bottom: 0.5em; }
+
+p.last {
+  margin-bottom: 0; }
+
+p img {
+  float: left;
+  margin: 1.5em 1.5em 1.5em 0;
+  padding: 0; }
+
+/* Use this if the image is at the top of the <p>. */
+p img.top {
+  margin-top: 0; }
+
+img {
+  margin: 0 0 1.5em; }
+
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help; }
+
+address {
+  font-style: italic;
+  margin-top: 1.5em; }
+
+del {
+  color: #666; }
+
+a, a:link {
+  color: #1a4882;
+  text-decoration: underline; }
+
+a:visited {
+  color: #1a4882; }
+
+a:hover {
+  color: #052246; }
+
+a:active,
+a:focus {
+  color: #1a4882; }
+
+blockquote {
+  border-left: 4px solid #d1d1d1;
+  color: #666;
+  font-style: italic;
+  margin: 1.5em 0;
+  padding-left: 1em; }
+
+strong {
+  font-weight: bold; }
+
+em,
+dfn {
+  font-style: italic; }
+
+dfn {
+  font-weight: bold; }
+
+pre, code {
+  margin: 1.5em 0;
+  white-space: pre; }
+
+pre, code, tt {
+  font: 1em 'andale mono', 'monotype.com', 'lucida console', monospace;
+  line-height: 1.5; }
+
+pre.code {
+  background: #000;
+  color: #fff;
+  padding: 20px; }
+
+tt {
+  display: block;
+  line-height: 1.5;
+  margin: 1.5em 0; }
+
+/* Forms */
+/*removes dotted outline on submit buttons when clicking in firefox */
+input[type="submit"]::-moz-focus-inner {
+  border: none; }
+
+form ol {
+  list-style: none;
+  margin: 0 0 1em 0; }
+
+form ol ol {
+  margin-left: 0; }
+
+form ol li {
+  list-style-position: outside;
+  margin: 0 0 1em 0; }
+
+/*list-style-position fixes IE label margin bug*/
+form ol ol li {
+  list-style-position: outside;
+  margin: 0 0 .25em 0; }
+
+form ol li.error input {
+  background: #FBE3E4; }
+
+p.inline-errors {
+  color: #D12F19; }
+
+form ol li.file {
+  background: #e1e1e1;
+  border: 1px solid #c8c8c8;
+  padding: 10px; }
+
+form abbr {
+  border-bottom: 0; }
+
+label {
+  display: block; }
+
+.required label {
+  font-weight: bold; }
+
+.checkbox_field label,
+.radio_field label {
+  font-weight: normal; }
+
+a.cancel {
+  color: #7d0d0d; }
+
+.inline-hints {
+  color: #666;
+  font-size: 0.8em;
+  margin-bottom: 0.25em; }
+
+/* Fieldsets */
+fieldset {
+  background: #f1f1f1;
+  border: 1px solid #e3e3e3;
+  margin: 0 0 1.5em 0;
+  padding: 1.5em 1.5em 1em 1.5em; }
+
+fieldset fieldset,
+fieldset fieldset fieldset {
+  border: 0;
+  padding: 0; }
+
+legend {
+  font-weight: bold; }
+
+fieldset.buttons {
+  background: inherit;
+  border: 0;
+  padding: 0; }
+
+fieldset.buttons li {
+  display: inline; }
+
+.radio fieldset {
+  margin: 0;
+  padding: 0; }
+
+/* Text fields */
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"]
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  font-size: inherit;
+  padding: 3px 2px;
+  width: 300px; }
+
+input[disabled='disabled'] {
+  background-color: #fcfcfc;
+  cursor: default; }
+
+input[type="checkbox"] {
+  margin: 0 3px 0 0;
+  position: relative;
+  top: -2px;
+  vertical-align: middle; }
+
+input[type="radio"] {
+  margin: 0 3px 0 0;
+  position: relative;
+  top: -2px;
+  vertical-align: middle; }
+
+.check_boxes label {
+  display: inline;
+  padding: 0;
+  vertical-align: middle; }
+
+.radio label {
+  padding: 0; }
+
+/* Textareas */
+textarea {
+  font-size: inherit;
+  height: 200px;
+  margin: 0 0.5em 0.5em 0;
+  padding: 5px;
+  width: 440px; }
+
+/* Select fields */
+fieldset .select select {
+  width: 200px;
+  font-size: 0.9em; }
+
+optgroup {
+  margin: 0 0 .5em 0; }
+
+/* Date & Time */
+form ol li.date ol li,
+form ol li.time ol li {
+  display: inline; }
+
+form ol li.datetime ol li {
+  display: inline-block; }
+
+form ol li.datetime select,
+form ol li.date select,
+form ol li.time select {
+  display: inline;
+  width: auto; }
+
+form ol li.date label,
+form ol li.time label {
+  display: none; }
+
+/* Tables */
+table {
+  margin-bottom: 2em;
+  width: 100%; }
+
+th {
+  border-bottom: 2px solid #ccc;
+  font-weight: bold;
+  text-align: left; }
+
+td {
+  border-bottom: 1px solid #ddd; }
+
+caption, th, td {
+  padding: 4px 10px 4px 0; }
+
+caption {
+  background: #f1f1f1;
+  margin-bottom: 1em;
+  padding: 10px 0; }
+
+tr, td, th {
+  vertical-align: middle; }
+
+/* Use this if you use span-x classes on th/td. */
+table .last {
+  padding-right: 0; }
+
+/* Lists */
+ul, ol {
+  list-style-position: inside;
+  margin-bottom: 1.5em; }
+
+ul {
+  list-style-type: disc; }
+
+ol {
+  list-style-type: decimal; }
+
+dl {
+  line-height: 1.4;
+  margin-bottom: 1.5em; }
+
+dl dt {
+  font-weight: bold;
+  margin-top: 0.5em; }
+
+dl dd {
+  margin-bottom: 0em; }
+
+dd {
+  margin-left: 0.5em; }
+
+li {
+  line-height: 1.4; }
+
+ol ol, ol ul, ul ul, ul ol {
+  margin-left: 1em; }

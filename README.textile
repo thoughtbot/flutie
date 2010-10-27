@@ -24,6 +24,14 @@ Flutie registers a :flutie shortcut for stylesheets, so in your layout you can d
 
 ...this will include all the flutie stylesheets, then the 'admin' stylesheet, and it will cache them all into one file.
 
+h3. Sass
+
+If you use Sass in your application, the flutie stylesheets are also available as scss files, installed in public/flutie/sass.  This location is automatically added to your Sass template load path.  These files can be imported into your own css files for use with the following:
+
+@import "flutie"
+
+h3. Custom Styles
+
 To add custom styles to the styleguide add partials to the app/views/styleguides directory. For example:
 
 bc. app/views/styleguides/_todo_item.erb:
