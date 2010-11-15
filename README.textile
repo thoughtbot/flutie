@@ -2,7 +2,7 @@ h1. Flutie
 
 Basic, default styles for rails applications
 
-h2. Installation
+h2. Installation & Upgrading
 
 Flutie is a Rails engine. It works with versions of Rails greater than 3.0.
 
@@ -15,6 +15,8 @@ The installer will copy the Flutie stylesheets into public/flutie/stylesheets
 Once Flutie is installed, with your application running (not in production environment) you can browse to /styleguides.  This will present you with many standard markup elements that are present in a Rails application, in your default application layout.
 
 Click on the "Default styles" link to view the same markup with a barebones layout that only contains the Flutie stylesheets. Click on "Application styles" to view the markup in your application layout.
+
+To upgrade, bump the gem version in your Gemfile, and then run 'rake flutie:install' again to get the latest changes moved into your application.
 
 h2. Usage
 
