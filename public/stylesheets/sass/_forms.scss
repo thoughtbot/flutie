@@ -83,6 +83,7 @@ fieldset fieldset fieldset {
 legend {
   font-weight: bold;
 }
+.ie6 legend, .ie7 legend { margin-left: -7px; }
 
 fieldset.buttons {
   background: inherit;
@@ -119,6 +120,9 @@ input[type="week"] {
   padding: 3px 2px;
   width: 300px;
 }
+.ie6 input {
+  vertical-align: text-bottom;
+}
 
 input[disabled='disabled'] {
   background-color: #fcfcfc;
@@ -130,6 +134,9 @@ input[type="checkbox"] {
   position: relative;
   top: -2px;
   vertical-align: middle;
+}
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
 }
 
 input[type="radio"] {
@@ -156,6 +163,7 @@ textarea {
   margin: 0 0.5em 0.5em 0;
   padding: 5px;
   width: 440px;
+  overflow: auto;
 }
 
 /* Select fields */
