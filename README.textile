@@ -8,7 +8,7 @@ Flutie is a Rails engine. It works with versions of Rails greater than 3.0.
 
 Flutie is recommended to be run as a gem and included in your Gemfile.
 
-  $ rake flutie:install
+bc. rake flutie:install
 
 The installer will copy the Flutie stylesheets into public/flutie/stylesheets
 
@@ -22,7 +22,7 @@ h2. Usage
 
 Flutie registers a :flutie shortcut for stylesheets, so in your layout you can do...
 
-  <%= stylesheet_link_tag :flutie, 'admin', :cache => true %>
+bc.. <%= stylesheet_link_tag :flutie, 'admin', :cache => true %>
 
 ...this will include all the flutie stylesheets, then the 'admin' stylesheet, and it will cache them all into one file.
 
@@ -30,13 +30,13 @@ h3. Sass
 
 If you use Sass in your application, the flutie stylesheets are also available as scss files, installed in public/flutie/sass.  This location is automatically added to your Sass template load path.  These files can be imported into your own css files for use with the following:
 
-@import "flutie"
+bc. @import "flutie"
 
 h3. Custom Styles
 
 To add custom styles to the styleguide add partials to the app/views/styleguides directory. For example:
 
-bc. app/views/styleguides/_todo_item.erb:
+app/views/styleguides/_todo_item.erb:
 
 bc.. <ol>
   <li class="todo">This is a todo item</li>
@@ -65,7 +65,7 @@ Fork away and create a "Github Issue":http://github.com/thoughtbot/flutie/issues
 
 h2. Development
 
-The actual stylesheet source files are sass, so edit the files in public/stylesheets/sass.  
+The actual stylesheet source files are sass, so edit the files in public/stylesheets/sass.
 To rebuild the normal scss run:
 
-  sass -C --update public/stylesheets/sass:public/stylesheets
+bc. sass -C --update public/stylesheets/sass:public/stylesheets
