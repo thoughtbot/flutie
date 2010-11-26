@@ -22,7 +22,7 @@ h2. Usage
 
 Flutie registers a :flutie shortcut for stylesheets, so in your layout you can do...
 
-bc.. <%= stylesheet_link_tag :flutie, 'admin', :cache => true %>
+bc. <%= stylesheet_link_tag :flutie, 'admin', :cache => true %>
 
 ...this will include all the flutie stylesheets, then the 'admin' stylesheet, and it will cache them all into one file.
 
@@ -30,7 +30,7 @@ h3. Sass
 
 If you use Sass in your application, the flutie stylesheets are also available as scss files, installed in public/flutie/sass.  This location is automatically added to your Sass template load path.  These files can be imported into your own css files for use with the following:
 
-bc. @import "flutie"
+bc. @import "flutie";
 
 h3. Custom Styles
 

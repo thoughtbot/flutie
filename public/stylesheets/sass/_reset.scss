@@ -45,7 +45,7 @@ mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
 
 del { text-decoration: line-through; }
 
-abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
+abbr[title], dfn[title] { cursor:help; }
 
 /* tables still need cellspacing="0" in the markup */
 table { border-collapse:collapse; border-spacing:0; }
