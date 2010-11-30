@@ -28,9 +28,11 @@ bc. <%= stylesheet_link_tag :flutie, 'admin', :cache => true %>
 
 h3. Sass
 
-If you use Sass in your application, the flutie stylesheets are also available as scss files, installed in public/flutie/sass.  This location is automatically added to your Sass template load path.  These files can be imported into your own css files for use with the following:
+If you use Sass in your application, the flutie stylesheets are also available as scss files, installed in public/flutie/sass.  This location is automatically added to your Sass template load path.  These files can be imported into your own sass files for use with the following:
 
 bc. @import "flutie";
+
+You'll want to import flutie before any of your own styles so that you can do things like extend your classes with flutie classes.
 
 h3. Custom Styles
 
