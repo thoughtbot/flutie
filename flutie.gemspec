@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name = 'flutie'
-  s.version = '1.1.3'
-  s.date = %q{2010-11-26}
+  s.version = '1.1.4'
+  s.date = %q{2010-12-01}
   s.email = 'support@thoughtbot.com'
   s.homepage = 'http://github.com/thoughtbot/flutie'
   s.summary = 'Flutie adds default stylesheets to web apps'
