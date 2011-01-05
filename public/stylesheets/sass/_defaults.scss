@@ -1,7 +1,7 @@
 body {
   color: #222;
   font-size: 13px;
-  font-family: arial, "helvetica neue", helvetica, "lucida grande", sans-serif;
+  font-family: "helvetica neue", arial, helvetica, "lucida grande", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -12,9 +12,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Success, error & notice boxes for messages and errors. */
 div.error, div.notice, div.success,
 #flash_failure, #flash_success, #flash_notice {
-  border: 1px solid #ddd;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
+  border: 1px solid #ddd;
   margin-bottom: 1em;
   padding: 0.8em;
 }
@@ -82,13 +82,12 @@ hr.space {
 
 /* for image replacement */
 .ir {
-  display: block;
-  text-indent: -999em;
-  overflow: hidden;
-  background-repeat:
-  no-repeat;
-  text-align: left;
+  background-repeat: no-repeat;
   direction: ltr;
+  display: block;
+  overflow: hidden;
+  text-align: left;
+  text-indent: -999em;
 }
 
 /* Hide for both screenreaders and browsers
@@ -98,28 +97,40 @@ hr.space {
   visibility: hidden;
 }
 
-/* Hide only visually, but have it available for screenreaders 
+/* Hide only visually, but have it available for screenreaders
    www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden  */
-.visuallyhidden { position: absolute !important;
+.visuallyhidden {
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px); }
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+}
 
 /* Hide visually and from screenreaders, but maintain layout */
-.invisible { visibility: hidden; }
+.invisible {
+  visibility: hidden;
+}
 
 /* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
-.clearfix:before, .clearfix:after {
+.clearfix:before,
+.clearfix:after {
   content: "\0020";
   display: block;
   height: 0;
   visibility: hidden;
 }
 
-.clearfix:after { clear: both; }
-/* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
-.clearfix { zoom: 1; }
+.clearfix:after {
+  clear: both;
+}
 
-.ie7 img { -ms-interpolation-mode: bicubic; }
+/* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+.clearfix {
+  zoom: 1;
+}
+
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
 
 @media print {
   * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
