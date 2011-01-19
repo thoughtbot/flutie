@@ -283,7 +283,7 @@ p img.top {
   margin-top: 0; }
 
 img {
-  margin: 0 0 1.5em; }
+  margin: 0; }
 
 abbr, acronym {
   border-bottom: 1px dotted #666;
