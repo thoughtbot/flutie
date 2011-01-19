@@ -1,18 +1,20 @@
-h1. Flutie
+Flutie
+======
 
 Basic, default styles for rails applications
 
-h2. Installation & Upgrading
+Installation & Upgrading
+------------------------
 
 Flutie is a Rails engine. It works with versions of Rails greater than 3.0.
 
 Flutie is recommended to be run as a gem and included in your Gemfile:
 
-bc. gem "flutie", "~> 1.1"
+    gem "flutie", "~> 1.1"
 
 After you've bundled, run the installer:
 
-bc. rake flutie:install
+    rake flutie:install
 
 The installer will copy the Flutie stylesheets into public/flutie/stylesheets
 
@@ -22,7 +24,8 @@ Click on the "Default styles" link to view the same markup with a barebones layo
 
 To upgrade, bump the gem version in your Gemfile, and then run 'rake flutie:install' again to get the latest changes moved into your application.
 
-h2. Usage
+Usage
+-----
 
 Flutie registers a :flutie shortcut for stylesheets, so in your layout you can do...
 
@@ -30,48 +33,60 @@ bc. <%= stylesheet_link_tag :flutie, 'admin', :cache => true %>
 
 ...this will include all the flutie stylesheets, then the 'admin' stylesheet, and it will cache them all into one file.
 
-h3. Sass
+### Sass
 
 If you use Sass in your application, the flutie stylesheets are also available as scss files, installed in public/flutie/sass.  This location is automatically added to your Sass template load path.  These files can be imported into your own sass files for use with the following:
 
-bc. @import "flutie";
+    @import "flutie";
 
 You'll want to import flutie before any of your own styles so that you can do things like extend your classes with flutie classes.
 
-h3. Custom Styles
+### Custom Styles
 
 To add custom styles to the styleguide add partials to the app/views/styleguides directory. For example:
 
-app/views/styleguides/_todo_item.erb:
+    app/views/styleguides/_todo_item.erb:
 
-bc.. <ol>
-  <li class="todo">This is a todo item</li>
-</ol>
+    <ol>
+      <li class="todo">This is a todo item</li>
+    </ol>
 
-p. Plugin authors can also add to the styleguide by ensuring that their view path
+Plugin authors can also add to the styleguide by ensuring that their view path
 is in ActionController::Base.view_paths and by placing a partial under the
 styleguides directory. For example:
 
-bc. ActionController::Base.append_view_path(File.join(File.dirname(__FILE__), 'views'))
+    ActionController::Base.append_view_path(File.join(File.dirname(__FILE__), 'views'))
 
-bc. my_awesome_plugin/views/styleguides/_pagination.erb:
+    my_awesome_plugin/views/styleguides/_pagination.erb:
 
-bc.. <div class="pagination">
-  <a href="#prev">Previous</a>
-  <a href="#next">Next</a>
-</div>
+    <div class="pagination">
+      <a href="#prev">Previous</a>
+      <a href="#next">Next</a>
+    </div>
 
-h2. Authors
-
-Flutie was written by thoughtbot, inc.
-
-h2. Suggestions, Bugs, Refactoring?
+Suggestions, Bugs, Refactoring?
+-------------------------------
 
 Fork away and create a "Github Issue":http://github.com/thoughtbot/flutie/issues. Please don't send pull requests.
 
-h2. Development
+Development
+-----------
 
 The actual stylesheet source files are sass, so edit the files in public/stylesheets/sass.
 To rebuild the normal scss run:
 
-bc. sass -C --update public/stylesheets/sass:public/stylesheets
+    sass -C --update public/stylesheets/sass:public/stylesheets
+
+Credits
+-------
+
+![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
+
+Flutie is maintained and funded by [thoughtbot, inc](http://thoughtbot.com/community)
+
+The names and logos for thoughtbot are trademarks of thoughtbot, inc.
+
+License
+-------
+
+Flutie is Copyright © 2010-2011 thoughtbot. It is free software, and may be redistributed under the terms specified in the LICENSE file.
