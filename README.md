@@ -84,6 +84,8 @@ Credits
 
 Flutie is maintained and funded by [thoughtbot, inc](http://thoughtbot.com/community)
 
+Thank you to all [the contributors](https://github.com/thoughtbot/flutie/contributors)!
+
 The names and logos for thoughtbot are trademarks of thoughtbot, inc.
 
 License
