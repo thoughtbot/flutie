@@ -1,0 +1,5 @@
+@mixin linear-gradient ($from, $to) {
+  background: $from;
+  background: -moz-linear-gradient(top, $from, $to);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, $from), color-stop(1, $to));
+}

@@ -1,0 +1,7 @@
+/* Useful with form inputs and textareas */
+@mixin box-sizing ($box) {
+  -webkit-box-sizing: $box; 
+  -moz-box-sizing: $box; 
+  box-sizing: $box; // border-box, content-box, padding-box (moz), margin-box (moz)
+}
+

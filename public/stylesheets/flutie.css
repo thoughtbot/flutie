@@ -78,6 +78,10 @@ hr {
 input, select {
   vertical-align: middle; }
 
+/* this hack is courtesy of gbbowers on github
+   https://gist.github.com/601810 */
+/* Useful with form inputs and textareas */
+/* Legacy support for inline-block in IE7 (maybe IE6) */
 body {
   color: #222;
   font-size: 13px;
@@ -283,7 +287,7 @@ p img.top {
   margin-top: 0; }
 
 img {
-  margin: 0; }
+  margin: 0 0 1.5em; }
 
 abbr, acronym {
   border-bottom: 1px dotted #666;
