@@ -77,6 +77,12 @@ To rebuild the normal scss run:
 
     sass -C --update public/stylesheets/sass:public/stylesheets
 
+You can run a server which will allow you to view the flutie styleguide locally:
+
+    ruby server.rb
+
+Browsing to localhost at the port output by the above command will show you the styleguide.
+
 Credits
 -------
 

@@ -1,10 +1,10 @@
 <div>
   <div style="padding: 15px; text-align: right;">
-    <% if params[:flutie] -%>
-    <%= link_to "Application Styles", :flutie => false %>
-    <% else -%>
-    <%= link_to "Default Styles", :flutie => true %>
-    <% end -%>
+    <% if params[:flutie] %>
+      <a href="?flutie=false">Application Styles</a>
+    <% else %>
+      <a href="?flutie=true">Default Styles</a>
+    <% end %>
   </div>
 
   <h1>This is an example page of our basic styles</h1>
@@ -731,12 +731,16 @@ end</code></pre>
     It should be the same size as &lt;p&gt; text.
   </tt>
 
-<hr />
-<h1>Additional Styleguides</h1>
-<hr />
 
-<% @styleguides.each do |styleguide| %>
-  <%= render :file => styleguide %>
+
+<% if @styleguides %>
+  <hr />
+  <h1>Additional Styleguides</h1>
+  <hr />
+
+  <% @styleguides.each do |styleguide| %>
+    <%= render :file => styleguide %>
+  <% end %>
 <% end %>
 
 </div>
