@@ -6,7 +6,7 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env) if defined?(Bundler)
 
-require 'haml'
+require 'sass'
 require 'flutie'
 
 module Dummy

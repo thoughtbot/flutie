@@ -8,5 +8,5 @@ Gem::Specification.new do |s|
   s.description = 'Flutie is a starting point for personal discovery'
   s.files = ["README*", "Rakefile", "{app,config,lib,public}/**/*"].map { |glob| Dir[glob] }.flatten
   s.authors = ['Chad Pytel', 'Kevin Burg', 'Matt Jankowski', 'Mike Burns', 'Fred Yates']
-  s.add_development_dependency('haml')
+  s.add_development_dependency('sass')
 end
