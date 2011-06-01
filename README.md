@@ -12,7 +12,7 @@ Flutie is recommended to be run as a gem and included in your Gemfile:
 
     gem "flutie", "~> 1.1"
 
-After you've bundled, run the installer:
+After you've bundled, if you are using Rails < 3.1, run the installer:
 
     rake flutie:install
 
@@ -23,6 +23,10 @@ Once Flutie is installed, with your application running (not in production envir
 Click on the "Default styles" link to view the same markup with a barebones layout that only contains the Flutie stylesheets. Click on "Application styles" to view the markup in your application layout.
 
 To upgrade, bump the gem version in your Gemfile, and then run 'rake flutie:install' again to get the latest changes moved into your application.
+
+If you are using rails 3.1 or greater with asset pipelining enabled, you don't need to run the installer.  Simply add
+    = require 'flutie'
+in the application stylesheet manifest (app/assets/stylesheets/applicaion.css).
 
 Usage
 -----
@@ -72,10 +76,10 @@ Fork away and create a "Github Issue":http://github.com/thoughtbot/flutie/issues
 Development
 -----------
 
-The actual stylesheet source files are sass, so edit the files in public/stylesheets/sass.
+The actual stylesheet source files are sass, so edit the files in vendor/assets/stylesheets/sass.
 To rebuild the normal scss run:
 
-    sass -C --update public/stylesheets/sass:public/stylesheets
+    sass -C --update vendor/assets/stylesheets/sass:vendor/assets/stylesheets
 
 You can run a server which will allow you to view the flutie styleguide locally:
 
