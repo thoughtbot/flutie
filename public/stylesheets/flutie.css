@@ -78,9 +78,6 @@ hr {
 input, select {
   vertical-align: middle; }
 
-/* this hack is courtesy of gbbowers on github
-   https://gist.github.com/601810 */
-/* Useful with form inputs and textareas */
 /* Legacy support for inline-block in IE7 (maybe IE6) */
 body {
   color: #222;
@@ -237,7 +234,6 @@ hr.space {
 
   h2, h3 {
     page-break-after: avoid; } }
-
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
