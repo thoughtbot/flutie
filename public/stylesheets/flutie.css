@@ -237,7 +237,6 @@ hr.space {
 
   h2, h3 {
     page-break-after: avoid; } }
-
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
@@ -505,22 +504,16 @@ optgroup {
   margin: 0 0 .5em 0; }
 
 /* Date & Time */
-form ol li.date ol li,
-form ol li.time ol li {
-  display: inline; }
-
-form ol li.datetime ol li {
-  display: inline-block; }
-
-form ol li.datetime select,
 form ol li.date select,
-form ol li.time select {
+form ol li.time select,
+form ol li.datetime select {
   display: inline;
   width: auto; }
 
-form ol li.date label,
-form ol li.time label {
-  display: none; }
+form ol li.date ol li,
+form ol li.time ol li,
+form ol li.datetime ol li {
+  display: inline-block; }
 
 /* Tables */
 table {
