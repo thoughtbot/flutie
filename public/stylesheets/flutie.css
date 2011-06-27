@@ -78,9 +78,6 @@ hr {
 input, select {
   vertical-align: middle; }
 
-/* this hack is courtesy of gbbowers on github
-   https://gist.github.com/601810 */
-/* Useful with form inputs and textareas */
 /* Legacy support for inline-block in IE7 (maybe IE6) */
 body {
   color: #222;
