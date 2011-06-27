@@ -35,11 +35,17 @@ bc. <%= stylesheet_link_tag :flutie, 'admin', :cache => true %>
 
 ### Sass
 
-If you use Sass in your application, the flutie stylesheets are also available as scss files, installed in public/flutie/sass.  This location is automatically added to your Sass template load path.  These files can be imported into your own sass files for use with the following:
+If you use Sass in your application, the flutie stylesheets are also available as scss files, installed in public/flutie/sass. This location is automatically added to your Sass template load path.  These files can be imported into your own sass files for use with the following:
 
     @import "flutie";
 
 You'll want to import flutie before any of your own styles so that you can do things like extend your classes with flutie classes.
+
+Sass mixins also need to be pulled in, as they are a submodule.
+
+    git submodule init && git submodule update
+
+See our [Sass-Mixins repository](https://github.com/thoughtbot/sass-mixins).
 
 ### Custom Styles
 
