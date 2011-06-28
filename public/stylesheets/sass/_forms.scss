@@ -95,6 +95,12 @@ fieldset.buttons li {
   display: inline;
 }
 
+// Use the button add-on
+button,
+input[type="submit"] {
+  @include button();
+}
+
 .radio fieldset {
   margin: 0;
   padding: 0;

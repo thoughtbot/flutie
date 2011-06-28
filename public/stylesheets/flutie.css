@@ -429,6 +429,58 @@ fieldset.buttons {
 fieldset.buttons li {
   display: inline; }
 
+button,
+input[type="submit"] {
+  border: 1px solid #076fe4;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 0 #8ebcf1;
+  -moz-box-shadow: inset 0 1px 0 0 #8ebcf1;
+  -ms-box-shadow: inset 0 1px 0 0 #8ebcf1;
+  -o-box-shadow: inset 0 1px 0 0 #8ebcf1;
+  box-shadow: inset 0 1px 0 0 #8ebcf1;
+  color: white;
+  display: inline;
+  font: bold 11px 'lucida grande', helvetica neue, helvetica, arial, sans-serif;
+  background-color: #4294f0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4294f0), to(#0776f3));
+  /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #4294f0, #0776f3);
+  background-image: -moz-linear-gradient(top, #4294f0, #0776f3);
+  background-image: -ms-linear-gradient(top, #4294f0, #0776f3);
+  background-image: -o-linear-gradient(top, #4294f0, #0776f3);
+  background-image: linear-gradient(top, #4294f0, #0776f3);
+  padding: 6px 18px 7px;
+  text-shadow: 0 1px 0 #0065d6;
+  -webkit-background-clip: padding-box; }
+  button:hover,
+  input[type="submit"]:hover {
+    -webkit-box-shadow: inset 0 1px 0 0 #60a2ec;
+    -moz-box-shadow: inset 0 1px 0 0 #60a2ec;
+    -ms-box-shadow: inset 0 1px 0 0 #60a2ec;
+    -o-box-shadow: inset 0 1px 0 0 #60a2ec;
+    box-shadow: inset 0 1px 0 0 #60a2ec;
+    cursor: pointer;
+    background-color: #2f87ea;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#2f87ea), to(#086fe3));
+    /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #2f87ea, #086fe3);
+    background-image: -moz-linear-gradient(top, #2f87ea, #086fe3);
+    background-image: -ms-linear-gradient(top, #2f87ea, #086fe3);
+    background-image: -o-linear-gradient(top, #2f87ea, #086fe3);
+    background-image: linear-gradient(top, #2f87ea, #086fe3); }
+  button:active,
+  input[type="submit"]:active {
+    border: 1px solid #076fe4;
+    -webkit-box-shadow: inset 0 0 8px 4px #0868d3, inset 0 0 8px 4px #0868d3, 0 1px 1px 0 #eeeeee;
+    -moz-box-shadow: inset 0 0 8px 4px #0868d3, inset 0 0 8px 4px #0868d3, 0 1px 1px 0 #eeeeee;
+    -ms-box-shadow: inset 0 0 8px 4px #0868d3, inset 0 0 8px 4px #0868d3, 0 1px 1px 0 #eeeeee;
+    -o-box-shadow: inset 0 0 8px 4px #0868d3, inset 0 0 8px 4px #0868d3, 0 1px 1px 0 #eeeeee;
+    box-shadow: inset 0 0 8px 4px #0868d3, inset 0 0 8px 4px #0868d3, 0 1px 1px 0 #eeeeee; }
+
 .radio fieldset {
   margin: 0;
   padding: 0; }
