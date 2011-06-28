@@ -1,8 +1,12 @@
 /* Forms */
 
-/*removes dotted outline on submit buttons when clicking in firefox */
+/*
+ * Remove inner padding and border in FF3/4
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
 input[type="submit"]::-moz-focus-inner {
-  border: none;
+  border: 0;
+  padding: 0;
 }
 
 form ol {
