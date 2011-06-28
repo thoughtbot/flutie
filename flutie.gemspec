@@ -9,4 +9,5 @@ Gem::Specification.new do |s|
   s.files = ["README*", "Rakefile", "{app,config,lib,public}/**/*"].map { |glob| Dir[glob] }.flatten
   s.authors = ['Chad Pytel', 'Kevin Burg', 'Matt Jankowski', 'Mike Burns', 'Fred Yates']
   s.add_development_dependency('sass')
+  s.add_development_dependency('rails', '3.0.8')
 end
