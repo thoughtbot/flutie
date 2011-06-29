@@ -10,7 +10,7 @@ Flutie is a Rails engine. It works with versions of Rails greater than 3.0.
 
 Flutie is recommended to be run as a gem and included in your Gemfile:
 
-    gem "flutie", "~> 1.1"
+    gem "flutie", "~> 1.2"
 
 After you've bundled, run the installer:
 
