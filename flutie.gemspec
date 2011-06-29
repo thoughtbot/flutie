@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'flutie'
-  s.version = '1.2.1'
+  s.version = '1.2.2'
   s.date = %q{2010-06-29}
   s.email = 'support@thoughtbot.com'
   s.homepage = 'http://github.com/thoughtbot/flutie'
