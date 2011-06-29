@@ -1,3 +1,0 @@
-[submodule "public/stylesheets/sass/sass-mixins"]
-	path = public/stylesheets/sass/sass-mixins
-	url = git@github.com:thoughtbot/sass-mixins.git
