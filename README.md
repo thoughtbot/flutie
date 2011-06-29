@@ -10,13 +10,13 @@ Flutie is a Rails engine. It works with versions of Rails greater than 3.0.
 
 Flutie is recommended to be run as a gem and included in your Gemfile:
 
-    gem "flutie", "~> 1.2"
+    gem "flutie"
 
 After you've bundled, run the installer:
 
     rake flutie:install
 
-The installer will copy the Flutie stylesheets into public/flutie/stylesheets
+The installer will copy the Flutie stylesheets into public/stylesheets/sass/flutie
 
 Once Flutie is installed, with your application running (not in production environment) you can browse to /styleguides.  This will present you with many standard markup elements that are present in a Rails application, in your default application layout.
 
@@ -35,17 +35,15 @@ bc. <%= stylesheet_link_tag :flutie, 'admin', :cache => true %>
 
 ### Sass
 
-If you use Sass in your application, the flutie stylesheets are also available as scss files, installed in public/flutie/sass. This location is automatically added to your Sass template load path.  These files can be imported into your own sass files for use with the following:
+If you use Sass in your application, the flutie stylesheets are also available as scss files, installed in public/stylesheets/sass/flutie. This location is automatically added to your Sass template load path.  These files can be imported into your own sass files for use with the following:
 
     @import "flutie";
 
 You'll want to import flutie before any of your own styles so that you can do things like extend your classes with flutie classes.
 
-Sass mixins also need to be pulled in, as they are a submodule.
+We have a [Sass-Mixins repository](https://github.com/thoughtbot/sass-mixins) available, which extends flutie with sass mixins.
 
-    git submodule init && git submodule update
-
-See our [Sass-Mixins repository](https://github.com/thoughtbot/sass-mixins).
+You should either add that repository as a git submodule in your project, or find some other way to copy the files into sass's load path.
 
 ### Custom Styles
 
@@ -78,10 +76,10 @@ Fork away and create a "Github Issue":http://github.com/thoughtbot/flutie/issues
 Development
 -----------
 
-The actual stylesheet source files are sass, so edit the files in public/stylesheets/sass.
+The actual stylesheet source files are sass, so edit the files in public/stylesheets/sass/flutie.
 To rebuild the normal scss run:
 
-    sass -C --update public/stylesheets/sass:public/stylesheets
+    sass -C --update public/stylesheets/sass/flutie:public/stylesheets
 
 You can run a server which will allow you to view the flutie styleguide locally:
 
