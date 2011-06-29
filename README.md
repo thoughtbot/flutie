@@ -16,7 +16,7 @@ After you've bundled, run the installer:
 
     rake flutie:install
 
-The installer will copy the Flutie stylesheets into public/stylesheets/sass/flutie
+The installer will copy the Flutie stylesheets sass into public/stylesheets/sass/flutie, and a static flutie.css into public/stylesheets/ in your app.
 
 Once Flutie is installed, with your application running (not in production environment) you can browse to /styleguides.  This will present you with many standard markup elements that are present in a Rails application, in your default application layout.
 
@@ -55,9 +55,7 @@ To add custom styles to the styleguide add partials to the app/views/styleguides
       <li class="todo">This is a todo item</li>
     </ol>
 
-Plugin authors can also add to the styleguide by ensuring that their view path
-is in ActionController::Base.view_paths and by placing a partial under the
-styleguides directory. For example:
+Plugin authors can also add to the styleguide by ensuring that their view path is in ActionController::Base.view_paths and by placing a partial under the styleguides directory. For example:
 
     ActionController::Base.append_view_path(File.join(File.dirname(__FILE__), 'views'))
 

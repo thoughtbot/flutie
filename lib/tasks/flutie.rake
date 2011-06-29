@@ -12,6 +12,6 @@ namespace :flutie do
   desc 'install flutie stylesheets into public/ directory'
   task :install => :environment do
     # Copy the flutie stylesheets into rails_root/public/stylesheets/sass
-    copy_files("../../public/stylesheets/sass/flutie", "/public/stylesheets/sass", directory)
+    copy_files("../../public/stylesheets", "/public", directory)
   end
 end
