@@ -2,7 +2,7 @@
 
 ul, ol {
   list-style-position: inside;
-  margin-bottom:  1.5em;
+  margin-bottom:  16px;
 }
 
 ul {
@@ -15,12 +15,12 @@ ol {
 
 dl {
   line-height: 1.4;
-  margin-bottom: 1.5em;
+  margin-bottom: 16px;
 }
 
 dl dt {
   font-weight: bold;
-  margin-top: 0.5em;
+  margin-top: 6px;
 }
 
 dl dd {
@@ -28,7 +28,7 @@ dl dd {
 }
 
 dd {
-  margin-left: 0.5em;
+  margin-left: 6px;
 }
 
 li {
@@ -36,5 +36,5 @@ li {
 }
 
 ol ol, ol ul, ul ul, ul ol {
-  margin-left: 1em;
+  margin-left: 12px;
 }

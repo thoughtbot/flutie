@@ -1,7 +1,9 @@
 /*
-  html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
-  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
-  html5doctor.com/html-5-reset-stylesheet/
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
 */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -22,6 +24,9 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent; }
+
+body {
+  line-height: 1; }
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -45,11 +50,13 @@ a {
   vertical-align: baseline;
   background: transparent; }
 
+/* change colours to suit your needs */
 ins {
   background-color: #ff9;
   color: #000;
   text-decoration: none; }
 
+/* change colours to suit your needs */
 mark {
   background-color: #ff9;
   color: #000;
@@ -60,18 +67,19 @@ del {
   text-decoration: line-through; }
 
 abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
   cursor: help; }
 
-/* tables still need cellspacing="0" in the markup */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* change border colour to suit your needs */
 hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #cccccc;
   margin: 1em 0;
   padding: 0; }
 
@@ -80,7 +88,7 @@ input, select {
 
 /* Legacy support for inline-block in IE7 (maybe IE6) */
 body {
-  color: #222;
+  color: #333;
   font-size: 13px;
   font-family: "helvetica neue", arial, helvetica, "lucida grande", sans-serif; }
 
@@ -91,9 +99,12 @@ h1, h2, h3, h4, h5, h6 {
 /* Success, error & notice boxes for messages and errors. */
 div.error, div.notice, div.success,
 #flash_failure, #flash_success, #flash_notice {
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
   border: 1px solid #ddd;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
   margin-bottom: 1em;
   padding: 0.8em; }
 
@@ -239,51 +250,44 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
 
 h1 {
-  font-size: 2.2em;
-  line-height: 1;
-  margin-bottom: 0.25em; }
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 12px; }
 
 h2 {
-  font-size: 1.6em;
-  line-height: 1.1;
-  margin-bottom: 0.25em; }
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 6px; }
 
 h3 {
-  font-size: 1.3em;
-  line-height: 1;
-  margin-bottom: 0.25em; }
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 4px; }
 
 h4 {
-  font-size: 1.1em;
-  line-height: 1.25;
-  margin-bottom: 0.25em; }
+  font-size: 16px;
+  line-height: 1.3;
+  margin-bottom: 4px; }
 
 h5 {
-  font-size: 1em;
-  margin-bottom: 0.25em; }
+  font-size: 14px;
+  margin-bottom: 4px; }
 
 h6 {
-  font-size: 1em;
-  margin-bottom: 0.25em; }
+  font-size: 12px;
+  margin-bottom: 4px; }
 
 /* Text elements */
 p {
-  margin-bottom: 0.5em; }
-
-p.last {
-  margin-bottom: 0; }
-
-p img {
-  float: left;
-  margin: 1.5em 1.5em 1.5em 0;
-  padding: 0; }
+  line-height: 1.4;
+  margin-bottom: 12px; }
 
 /* Use this if the image is at the top of the <p>. */
 p img.top {
   margin-top: 0; }
 
 img {
-  margin: 0 0 1.5em; }
+  margin: 0 0 12px; }
 
 abbr, acronym {
   border-bottom: 1px dotted #666;
@@ -291,7 +295,7 @@ abbr, acronym {
 
 address {
   font-style: italic;
-  margin-top: 1.5em; }
+  margin-top: 16px; }
 
 del {
   color: #666; }
@@ -314,8 +318,8 @@ blockquote {
   border-left: 4px solid #d1d1d1;
   color: #666;
   font-style: italic;
-  margin: 1.5em 0;
-  padding-left: 1em; }
+  margin: 16px 0;
+  padding-left: 12px; }
 
 strong {
   font-weight: bold; }
@@ -328,7 +332,7 @@ dfn {
   font-weight: bold; }
 
 pre, code {
-  margin: 1.5em 0;
+  margin: 12px 0;
   white-space: pre;
   /* CSS2 */
   white-space: pre-wrap;
@@ -337,7 +341,7 @@ pre, code {
   /* IE */ }
 
 pre, code, tt {
-  font: 1em 'andale mono', 'monotype.com', 'lucida console', monospace;
+  font: 12px 'andale mono', 'monotype.com', 'lucida console', monospace;
   line-height: 1.5; }
 
 pre.code {
@@ -348,12 +352,16 @@ pre.code {
 tt {
   display: block;
   line-height: 1.5;
-  margin: 1.5em 0; }
+  margin: 16px 0; }
 
 /* Forms */
-/*removes dotted outline on submit buttons when clicking in firefox */
+/*
+ * Remove inner padding and border in FF3/4
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
 input[type="submit"]::-moz-focus-inner {
-  border: none; }
+  border: 0;
+  padding: 0; }
 
 form ol {
   list-style: none;

@@ -6,22 +6,40 @@
     <title>Flutie v1</title>
 
     <style type="text/css">
-    /* These are styles to make the page look nice */
+    /* Styleguide-specific styles */
+    body {
+      background-color: #dadada;
+    }
 
-    body { background-color: #dadada;}
+    .switcher {
+      margin: 30px auto 0;
+      text-align: right;
+      width: 880px;
+    }
+
     .content {
       background: #fff;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      margin: 30px auto;
       padding: 40px;
-      margin: 40px auto;
       width: 880px;
-      -moz-border-radius: 24px;
-      -webkit-border-radius: 24px;
     }
     </style>
 
   </head>
 
   <body>
+
+    <div class="switcher">
+      <% if params[:flutie] %>
+        <a href="?flutie=false">Application Styles</a>
+      <% else %>
+        <a href="?flutie=true">Default Styles</a>
+      <% end %>
+    </div>
+
     <div class="content">
       <%= yield %>
     </div>

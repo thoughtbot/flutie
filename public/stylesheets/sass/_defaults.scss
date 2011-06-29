@@ -1,5 +1,5 @@
 body {
-  color: #222;
+  color: #333;
   font-size: 13px;
   font-family: "helvetica neue", arial, helvetica, "lucida grande", sans-serif;
 }
@@ -12,11 +12,10 @@ h1, h2, h3, h4, h5, h6 {
 /* Success, error & notice boxes for messages and errors. */
 div.error, div.notice, div.success,
 #flash_failure, #flash_success, #flash_notice {
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
   border: 1px solid #ddd;
-  margin-bottom: 1em;
-  padding: 0.8em;
+  @include border-radius (8px);
+  margin-bottom: 12px;
+  padding: 10px;
 }
 
 div.error,
@@ -59,8 +58,8 @@ div.success a,
 /* Use a .box to create a padded box inside a column.  */
 .box {
   background: #eee;
-  margin-bottom: 1.5em;
-  padding: 1.5em;
+  margin-bottom: 16px;
+  padding: 16px;
 }
 
 /* Use this to create a horizontal ruler across a column. */
@@ -71,7 +70,7 @@ hr {
   color: #ddd;
   float: none;
   height: 1px;
-  margin: 0 0 1.4em;
+  margin: 0 0 12px;
   width: 100%;
 }
 
@@ -87,7 +86,7 @@ hr.space {
   display: block;
   overflow: hidden;
   text-align: left;
-  text-indent: -999em;
+  text-indent: -9999px;
 }
 
 /* Hide for both screenreaders and browsers
