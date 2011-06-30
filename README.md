@@ -41,9 +41,7 @@ If you use Sass in your application, the flutie stylesheets are also available a
 
 You'll want to import flutie before any of your own styles so that you can do things like extend your classes with flutie classes.
 
-We have a [Sass-Mixins repository](https://github.com/thoughtbot/sass-mixins) available, which extends flutie with sass mixins.
-
-You should either add that repository as a git submodule in your project, or find some other way to copy the files into sass's load path.
+We also have a [Sass-Mixins gem](https://github.com/thoughtbot/sass-mixins) available, which extends flutie with a set of vanilla sass mixins.
 
 ### Custom Styles
 
