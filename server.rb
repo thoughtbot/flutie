@@ -3,6 +3,7 @@ require 'sinatra'
 
 set :views, ['app/views']
 set :static, true
+set :public, 'app/assets'
 
 helpers do
   def stylesheet_link_tag(name)
