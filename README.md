@@ -76,10 +76,10 @@ Fork away and create a "Github Issue":http://github.com/thoughtbot/flutie/issues
 Development
 -----------
 
-The actual stylesheet source files are sass, so edit the files in vendor/assets/stylesheets/sass.
+The actual stylesheet source files are sass, so edit the files in app/assets/stylesheets/sass.
 To rebuild the normal scss run:
 
-    sass -C --update vendor/assets/stylesheets/sass:vendor/assets/stylesheets
+    sass -C --update app/assets/stylesheets/sass:app/assets/stylesheets
 
 You can run a server which will allow you to view the flutie styleguide locally:
 

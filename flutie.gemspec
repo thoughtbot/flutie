@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.homepage = 'http://github.com/thoughtbot/flutie'
   s.summary = 'Flutie adds default stylesheets to web apps'
   s.description = 'Flutie is a starting point for personal discovery'
-  s.files = ["README*", "Rakefile", "{app,config,lib,vendor}/**/*"].map { |glob| Dir[glob] }.flatten
+  s.files = ["README*", "Rakefile", "{app,config,lib}/**/*"].map { |glob| Dir[glob] }.flatten
   s.authors = ['Chad Pytel', 'Kevin Burg', 'Matt Jankowski', 'Mike Burns', 'Fred Yates']
   s.add_development_dependency('haml')
 end

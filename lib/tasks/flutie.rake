@@ -16,7 +16,7 @@ namespace :flutie do
       puts "Flutie stylesheets are provided via asset pipelining."
     else
       # Copy the flutie stylesheets into rails_root/public/flutie
-      copy_files("../../vendor/assets/stylesheets", "/public/flutie", directory)
+      copy_files("../../app/assets/stylesheets", "/public/flutie", directory)
     end
   end
 end
