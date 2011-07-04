@@ -11,7 +11,12 @@ directory = File.dirname(__FILE__)
 namespace :flutie do
   desc 'install flutie stylesheets into public/ directory'
   task :install => :environment do
-    # Copy the flutie stylesheets into rails_root/public/stylesheets/sass
-    copy_files("../../public/stylesheets", "/public", directory)
+    if Rails.application.config.respond_to?(:assets) && Rails.application.config.assets.enabled
+      # No copy is needed when asset pipelining is enabled
+      puts "Flutie stylesheets are provided via asset pipelining."
+    else
+      # Copy the flutie stylesheets into rails_root/public/flutie
+      copy_files("../../app/assets/stylesheets", "/public/flutie", directory)
+    end
   end
 end
