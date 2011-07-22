@@ -73,6 +73,8 @@ Suggestions, Bugs, Refactoring?
 
 Fork away and create a "Github Issue":http://github.com/thoughtbot/flutie/issues. Please don't send pull requests.
 
+Please see CONTRIBUTING.md for details.
+
 Development
 -----------
 
