@@ -45,8 +45,6 @@ If you use Sass in your application, the flutie stylesheets are also available a
 
 You'll want to import flutie before any of your own styles so that you can do things like extend your classes with flutie classes.
 
-We also have a [Sass-Mixins gem](https://github.com/thoughtbot/sass-mixins) available, which extends flutie with a set of vanilla sass mixins.
-
 ### Custom Styles
 
 To add custom styles to the styleguide add partials to the app/views/styleguides directory. For example:
@@ -70,8 +68,6 @@ Plugin authors can also add to the styleguide by ensuring that their view path i
 
 Suggestions, Bugs, Refactoring?
 -------------------------------
-
-Fork away and create a "Github Issue":http://github.com/thoughtbot/flutie/issues. Please don't send pull requests.
 
 Please see CONTRIBUTING.md for details.
 
