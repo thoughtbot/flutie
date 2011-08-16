@@ -26,7 +26,7 @@ To upgrade, bump the gem version in your Gemfile, and then run 'rake flutie:inst
 
 If you are using rails 3.1 or greater with asset pipelining enabled, you don't need to run the installer.  Simply add
     = require 'flutie'
-in the application stylesheet manifest (app/assets/stylesheets/applicaion.css).
+in the application stylesheet manifest (app/assets/stylesheets/application.css).
 
 Usage
 -----
