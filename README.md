@@ -71,7 +71,7 @@ Plugin authors can also add to the styleguide by ensuring that their view path i
 Suggestions, Bugs, Refactoring?
 -------------------------------
 
-Fork away and create a "Github Issue":http://github.com/thoughtbot/flutie/issues. Please don't send pull requests.
+Fork away and create a [Github Issue](http://github.com/thoughtbot/flutie/issues). Please don't send pull requests.
 
 Please see CONTRIBUTING.md for details.
 
