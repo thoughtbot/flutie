@@ -29,7 +29,7 @@ RSpec.configure do |config|
   config.include RSpec::Matchers
 
   # == Mock Framework
-  config.mock_with :rspec
+  config.mock_with :mocha
 end
 
 require 'rexml/document'
