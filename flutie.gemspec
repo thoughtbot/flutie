@@ -6,8 +6,8 @@ Gem::Specification.new do |s|
   s.homepage = 'http://github.com/thoughtbot/flutie'
   s.summary = 'Flutie adds default stylesheets to web apps'
   s.description = 'Flutie is a starting point for personal discovery'
-  s.files = ["README*", "Rakefile", "{app,config,lib,public}/**/*"].map { |glob| Dir[glob] }.flatten
+  s.files = Dir["{app,cnofig,lib,public}/**/*"] + ["MIT-LICENSE", "Rakefile", "Gemfile", "README*"]
   s.authors = ['Chad Pytel', 'Kevin Burg', 'Matt Jankowski', 'Mike Burns', 'Fred Yates']
   s.add_development_dependency('sass')
-  s.add_development_dependency('rails', '3.0.8')
+  s.add_development_dependency('rails', '3.0.10')
 end
