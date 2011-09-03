@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.summary = 'Flutie adds default stylesheets to web apps'
   s.description = 'Flutie is a starting point for personal discovery'
   s.files = Dir["{app,config,lib,public}/**/*"] + ["LICENSE", "Rakefile", "Gemfile", "README.md"]
-  s.authors = ['Chad Pytel', 'Kevin Burg', 'Matt Jankowski', 'Mike Burns', 'Fred Yates']
+  s.authors = ['Matt Jankowski', 'Chad Pytel', 'Kevin Burg', 'Chad Mazzola', 'Phil LaPier', 'Dan Croak', 'Fred Yates', 'OZAWA Sakuro', 'Mike Burns', 'Greg Sterndale', 'Joe Ferris', 'J. Edward Dewyea', 'Emilien Taque', 'Aaron Suggs', 'Nick Quaranto']
   s.add_development_dependency('sass')
   s.add_development_dependency('rails', '3.0.10')
 end
