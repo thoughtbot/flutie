@@ -78,10 +78,10 @@ Please see CONTRIBUTING.md for details.
 Development
 -----------
 
-The actual stylesheet source files are sass, so edit the files in app/assets/stylesheets/sass/flutie.
-To rebuild the normal scss run:
+The actual stylesheet source files are sass, so edit the files in app/assets/stylesheets/.
+To rebuild the static flutie.css file, you can run:
 
-    sass -C --update app/assets/stylesheets/sass/flutie:app/assets/stylesheets
+    sass --update app/assets/stylesheets/flutie.scss:public/stylesheets/flutie.css
 
 You can run a server which will allow you to view the flutie styleguide locally:
 
