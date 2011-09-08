@@ -1,0 +1,39 @@
+/* Success, error & notice boxes for messages and errors. */
+div.error, div.notice, div.success, #flash_failure, #flash_success, #flash_notice {
+  border: 1px solid #ddd;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  padding: 10px;
+}
+
+div.error, #flash_failure {
+  background: #FBE3E4;
+  border-color: #FBC2C4;
+  color: #D12F19;
+}
+
+div.error a, #flash_failure a {
+  color: #D12F19;
+}
+
+div.notice, #flash_notice {
+  background: #FFF6BF;
+  border-color: #FFD324;
+  color: #817134;
+}
+
+div.notice a, #flash_notice a {
+  color: #817134;
+}
+
+div.success, #flash_success {
+  background: #E6EFC2;
+  border-color: #C6D880;
+  color: #529214;
+}
+
+div.success a, #flash_success a {
+  color: #529214;
+}
