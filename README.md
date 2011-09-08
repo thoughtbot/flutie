@@ -24,9 +24,15 @@ Click on the "Default styles" link to view the same markup with a barebones layo
 
 To upgrade, bump the gem version in your Gemfile, and then run 'rake flutie:install' again to get the latest changes moved into your application.
 
-If you are using rails 3.1 or greater with asset pipelining enabled, you don't need to run the installer.  Simply add
-    = require 'flutie'
-in the application stylesheet manifest (app/assets/stylesheets/application.css).
+If you are using rails 3.1 or greater with asset pipelining enabled, you don't need to run the installer.  Simply add:
+
+    *= require _flutie
+
+in the application stylesheet manifest (app/assets/stylesheets/application.css), or:
+
+    @import 'flutie';
+
+as a sass import.
 
 Usage
 -----
@@ -81,7 +87,7 @@ Development
 The actual stylesheet source files are sass, so edit the files in app/assets/stylesheets/.
 To rebuild the static flutie.css file, you can run:
 
-    sass --update app/assets/stylesheets/flutie.scss:public/stylesheets/flutie.css
+    sass --update app/assets/stylesheets/_flutie.scss:public/stylesheets/flutie.css
 
 You can run a server which will allow you to view the flutie styleguide locally:
 
