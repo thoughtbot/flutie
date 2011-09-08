@@ -1,9 +1,9 @@
 /* Forms */
 
 /*
- * Remove inner padding and border in FF3/4
- * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
- */
+* Remove inner padding and border in FF3/4
+* www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+*/
 input[type="submit"]::-moz-focus-inner {
   border: 0;
   padding: 0;
@@ -78,8 +78,7 @@ fieldset {
   padding: 16px 16px 12px 16px;
 }
 
-fieldset fieldset,
-fieldset fieldset fieldset {
+fieldset fieldset, fieldset fieldset fieldset {
   border: 0;
   padding: 0;
 }
@@ -181,15 +180,11 @@ optgroup {
 }
 
 /* Date & Time */
-form ol li.date select,
-form ol li.time select,
-form ol li.datetime select {
+form ol li.date select, form ol li.time select, form ol li.datetime select {
   display: inline;
   width: auto;
 }
 
-form ol li.date ol li,
-form ol li.time ol li,
-form ol li.datetime ol li {
+form ol li.date ol li, form ol li.time ol li, form ol li.datetime ol li {
   display: inline-block;
 }
