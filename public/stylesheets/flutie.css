@@ -5,18 +5,12 @@ Last Updated: 2010-09-17
 Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small,
+strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label,
+legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, figcaption, figure, footer, header, hgroup, menu, nav, section,
+summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -28,8 +22,8 @@ time, mark, audio, video {
 body {
   line-height: 1; }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav,
+section {
   display: block; }
 
 nav ul {
@@ -38,8 +32,7 @@ nav ul {
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none; }
 
@@ -95,46 +88,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #111;
   font-family: "helvetica neue", Helvetica, arial, sans-serif; }
 
-/* Success, error & notice boxes for messages and errors. */
-div.error, div.notice, div.success,
-#flash_failure, #flash_success, #flash_notice {
-  border: 1px solid #ddd;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  margin-bottom: 12px;
-  padding: 10px; }
-
-div.error,
-#flash_failure {
-  background: #FBE3E4;
-  border-color: #FBC2C4;
-  color: #D12F19; }
-
-div.error a,
-#flash_failure a {
-  color: #D12F19; }
-
-div.notice,
-#flash_notice {
-  background: #FFF6BF;
-  border-color: #FFD324;
-  color: #817134; }
-
-div.notice a,
-#flash_notice a {
-  color: #817134; }
-
-div.success,
-#flash_success {
-  background: #E6EFC2;
-  border-color: #C6D880;
-  color: #529214; }
-
-div.success a,
-#flash_success a {
-  color: #529214; }
-
 /* Misc classes and elements */
 /* Use a .box to create a padded box inside a column.  */
 .box {
@@ -167,13 +120,13 @@ hr.space {
   text-indent: -9999px; }
 
 /* Hide for both screenreaders and browsers
-   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+css-discuss.incutio.com/wiki/Screenreader_Visibility */
 .hidden {
   display: none;
   visibility: hidden; }
 
 /* Hide only visually, but have it available for screenreaders
-   www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden  */
+www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden  */
 .visuallyhidden {
   clip: rect(1px 1px 1px 1px);
   /* IE6, IE7 */
@@ -185,8 +138,7 @@ hr.space {
   visibility: hidden; }
 
 /* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .clearfix:after {
   content: "\0020";
   display: block;
   height: 0;
@@ -242,6 +194,39 @@ hr.space {
 
   h2, h3 {
     page-break-after: avoid; } }
+/* Success, error & notice boxes for messages and errors. */
+div.error, div.notice, div.success, #flash_failure, #flash_success, #flash_notice {
+  border: 1px solid #ddd;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  padding: 10px; }
+
+div.error, #flash_failure {
+  background: #FBE3E4;
+  border-color: #FBC2C4;
+  color: #D12F19; }
+
+div.error a, #flash_failure a {
+  color: #D12F19; }
+
+div.notice, #flash_notice {
+  background: #FFF6BF;
+  border-color: #FFD324;
+  color: #817134; }
+
+div.notice a, #flash_notice a {
+  color: #817134; }
+
+div.success, #flash_success {
+  background: #E6EFC2;
+  border-color: #C6D880;
+  color: #529214; }
+
+div.success a, #flash_success a {
+  color: #529214; }
+
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
@@ -307,8 +292,7 @@ a:visited {
 a:hover {
   color: #052246; }
 
-a:active,
-a:focus {
+a:active, a:focus {
   color: #1a4882; }
 
 blockquote {
@@ -353,9 +337,9 @@ tt {
 
 /* Forms */
 /*
- * Remove inner padding and border in FF3/4
- * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
- */
+* Remove inner padding and border in FF3/4
+* www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+*/
 input[type="submit"]::-moz-focus-inner {
   border: 0;
   padding: 0; }
@@ -415,8 +399,7 @@ fieldset {
   margin: 0 0 16px 0;
   padding: 16px 16px 12px 16px; }
 
-fieldset fieldset,
-fieldset fieldset fieldset {
+fieldset fieldset, fieldset fieldset fieldset {
   border: 0;
   padding: 0; }
 
@@ -506,15 +489,11 @@ optgroup {
   margin: 0 0 6px 0; }
 
 /* Date & Time */
-form ol li.date select,
-form ol li.time select,
-form ol li.datetime select {
+form ol li.date select, form ol li.time select, form ol li.datetime select {
   display: inline;
   width: auto; }
 
-form ol li.date ol li,
-form ol li.time ol li,
-form ol li.datetime ol li {
+form ol li.date ol li, form ol li.time ol li, form ol li.datetime ol li {
   display: inline-block; }
 
 /* Tables */
