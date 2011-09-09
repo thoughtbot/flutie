@@ -39,7 +39,7 @@ Usage
 
 Flutie registers a :flutie shortcut for stylesheets, so in your layout you can do...
 
-bc. <%= stylesheet_link_tag :flutie, 'admin', :cache => true %>
+    <%= stylesheet_link_tag :flutie, 'admin', :cache => true %>
 
 ...this will include all the flutie stylesheets, then the 'admin' stylesheet, and it will cache them all into one file.
 
