@@ -1,6 +1,8 @@
 Flutie
 ======
 
+[![Build Status](https://secure.travis-ci.org/thoughtbot/flutie.png?branch=master)](http://travis-ci.org/thoughtbot/flutie)
+
 Basic, default styles for rails applications
 
 Installation & Upgrading
