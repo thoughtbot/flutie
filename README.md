@@ -74,6 +74,44 @@ Plugin authors can also add to the styleguide by ensuring that their view path i
       <a href="#next">Next</a>
     </div>
 
+Helpers
+-------
+
+Flutie provides several helper methods for layouts as well.
+
+The `page_title` method can be used like:
+
+    <title><%= page_title %></title>
+
+By default, it will produce results like:
+
+    <title>Appname : page title</title>
+
+* "App name" comes from the module name of the rails application created by your app, i.e. `Appname::Application` will produce "Appname"
+* "page" comes from trying `content_for(:page_title)` and assumes you are setting :page_title on your pages.
+* The separator defaults to " : "
+
+These can be overridden by passing an options hash including `:app_name`, `:page_title_symbol` and `:separator` hash keys, ie:
+
+    content_for(:site_page_title, 'My title of my page')
+    page_title(:app_name => 'My app name', :page_title_symbol => :site_page_title, :separator => " | ")
+    => "My app name | My title of my page"
+
+The `body_class` method can be used like:
+
+    <body class="<%= body_class %>">
+
+This will produce a string including the controller name and controller-action name.  For example, The WidgetsController#show action would produce:
+
+    <body class="widgets widgets-show">
+
+Anything which has been added via `content_for(:extra_body_classes)` will be added to the end, for example:
+
+    content_for(:extra_body_classes, 'special-page')
+    <body class="<%= body_class %>">
+    <body class="widgets widgets-show special-page">
+
+
 Suggestions, Bugs, Refactoring?
 -------------------------------
 
