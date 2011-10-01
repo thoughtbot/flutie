@@ -52,28 +52,6 @@ If you use Sass in your application, the flutie stylesheets are also available a
 
 You'll want to import flutie before any of your own styles so that you can do things like extend your classes with flutie classes.
 
-Custom Styles
--------------
-
-To add custom styles to the styleguide add partials to the app/views/styleguides directory. For example:
-
-    app/views/styleguides/_todo_item.erb:
-
-    <ol>
-      <li class="todo">This is a todo item</li>
-    </ol>
-
-Plugin authors can also add to the styleguide by ensuring that their view path is in ActionController::Base.view_paths and by placing a partial under the styleguides directory. For example:
-
-    ActionController::Base.append_view_path(File.join(File.dirname(__FILE__), 'views'))
-
-    my_awesome_plugin/views/styleguides/_pagination.erb:
-
-    <div class="pagination">
-      <a href="#prev">Previous</a>
-      <a href="#next">Next</a>
-    </div>
-
 Helpers
 -------
 
@@ -111,6 +89,27 @@ Anything which has been added via `content_for(:extra_body_classes)` will be add
     <body class="<%= body_class %>">
     <body class="widgets widgets-show special-page">
 
+Custom Styles
+-------------
+
+To add custom styles to the styleguide add partials to the app/views/styleguides directory. For example:
+
+    app/views/styleguides/_todo_item.erb:
+
+    <ol>
+      <li class="todo">This is a todo item</li>
+    </ol>
+
+Plugin authors can also add to the styleguide by ensuring that their view path is in ActionController::Base.view_paths and by placing a partial under the styleguides directory. For example:
+
+    ActionController::Base.append_view_path(File.join(File.dirname(__FILE__), 'views'))
+
+    my_awesome_plugin/views/styleguides/_pagination.erb:
+
+    <div class="pagination">
+      <a href="#prev">Previous</a>
+      <a href="#next">Next</a>
+    </div>
 
 Suggestions, Bugs, Refactoring?
 -------------------------------
