@@ -5,6 +5,8 @@ Flutie
 
 Basic, default styles for rails applications
 
+We also have a [Bourbon](https://github.com/thoughtbot/bourbon) gem available, which can be used to extend flutie with a set of vanilla sass mixins.
+
 Installation & Upgrading
 ------------------------
 
@@ -14,7 +16,17 @@ Flutie is recommended to be run as a gem and included in your Gemfile:
 
     gem "flutie"
 
-After you've bundled, if you are using Rails < 3.1, run the installer:
+### Rails 3.1
+
+After you've bundled, if you are using rails 3.1 or greater with asset pipelining enabled, simply add:
+
+    @import 'flutie';
+
+as a sass import in the application stylesheet manifest (app/assets/stylesheets/application.css).
+
+### Rails 3
+
+After you've bundled, run the installer:
 
     rake flutie:install
 
@@ -26,26 +38,13 @@ Click on the "Default styles" link to view the same markup with a barebones layo
 
 To upgrade, bump the gem version in your Gemfile, and then run 'rake flutie:install' again to get the latest changes moved into your application.
 
-If you are using rails 3.1 or greater with asset pipelining enabled, you don't need to run the installer.  Simply add:
-
-    *= require _flutie
-
-in the application stylesheet manifest (app/assets/stylesheets/application.css), or:
-
-    @import 'flutie';
-
-as a sass import.
-
-Usage
------
-
 Flutie registers a :flutie shortcut for stylesheets, so in your layout you can do...
 
     <%= stylesheet_link_tag :flutie, 'admin', :cache => true %>
 
 ...this will include all the flutie stylesheets, then the 'admin' stylesheet, and it will cache them all into one file.
 
-### Sass
+#### Sass
 
 If you use Sass in your application, the flutie stylesheets are also available as scss files, installed in public/stylesheets/sass/flutie.  These files can be imported into your own sass files for use with the following:
 
@@ -53,9 +52,8 @@ If you use Sass in your application, the flutie stylesheets are also available a
 
 You'll want to import flutie before any of your own styles so that you can do things like extend your classes with flutie classes.
 
-We also have a [Bourbon](https://github.com/thoughtbot/bourbon) gem available, which can be used to extend flutie with a set of vanilla sass mixins.
-
-### Custom Styles
+Custom Styles
+-------------
 
 To add custom styles to the styleguide add partials to the app/views/styleguides directory. For example:
 
