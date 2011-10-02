@@ -36,7 +36,7 @@ Once Flutie is installed, with your application running (not in production envir
 
 Click on the "Default styles" link to view the same markup with a barebones layout that only contains the Flutie stylesheets. Click on "Application styles" to view the markup in your application layout.
 
-To upgrade, bump the gem version in your Gemfile, and then run 'rake flutie:install' again to get the latest changes moved into your application.
+To upgrade, bump the gem version in your Gemfile, and then run `rake flutie:install` again to get the latest changes moved into your application.
 
 Flutie registers a :flutie shortcut for stylesheets, so in your layout you can do...
 
@@ -57,6 +57,8 @@ Helpers
 
 Flutie provides several helper methods for layouts as well.
 
+#### page_title
+
 The `page_title` method can be used like:
 
     <title><%= page_title %></title>
@@ -66,7 +68,7 @@ By default, it will produce results like:
     <title>Appname : page title</title>
 
 * "App name" comes from the module name of the rails application created by your app, i.e. `Appname::Application` will produce "Appname"
-* "page" comes from trying `content_for(:page_title)` and assumes you are setting :page_title on your pages.
+* "page" comes from trying `content_for(:page_title)` and assumes you are using `content_for` with `:page_title` symbol on your pages.
 * The separator defaults to " : "
 
 These can be overridden by passing an options hash including `:app_name`, `:page_title_symbol` and `:separator` hash keys, ie:
@@ -74,6 +76,8 @@ These can be overridden by passing an options hash including `:app_name`, `:page
     content_for(:site_page_title, 'My title of my page')
     page_title(:app_name => 'My app name', :page_title_symbol => :site_page_title, :separator => " | ")
     => "My app name | My title of my page"
+
+#### body_class
 
 The `body_class` method can be used like:
 
@@ -100,7 +104,7 @@ To add custom styles to the styleguide add partials to the app/views/styleguides
       <li class="todo">This is a todo item</li>
     </ol>
 
-Plugin authors can also add to the styleguide by ensuring that their view path is in ActionController::Base.view_paths and by placing a partial under the styleguides directory. For example:
+Plugin authors can also add to the styleguide by ensuring that their view path is in `ActionController::Base.view_paths` and by placing a partial under the styleguides directory. For example:
 
     ActionController::Base.append_view_path(File.join(File.dirname(__FILE__), 'views'))
 
@@ -126,7 +130,7 @@ To rebuild the static flutie.css file, you can run:
 
     sass --update app/assets/stylesheets/_flutie.scss:public/stylesheets/flutie.css
 
-You can run a server which will allow you to view the flutie styleguide locally:
+You can also run a local server which will allow you to view the flutie styleguide:
 
     ruby server.rb
 
