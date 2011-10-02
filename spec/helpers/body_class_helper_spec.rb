@@ -36,4 +36,8 @@ describe BodyClassHelper, 'with extra body classes' do
   it "adds extra body classes to the controller classes" do
     helper.body_class.should == 'widgets widgets-show extra_class'
   end
+  it "adds extra body classes to the controller classes when #content_for= is called many times" do
+    helper.content_for(:extra_body_classes, ' many extra classes')
+    helper.body_class.should == 'widgets widgets-show extra_class many extra classes'
+  end
 end
