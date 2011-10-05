@@ -1,9 +1,9 @@
 require 'rubygems'
 require 'sinatra'
+require 'sass'
 
 set :views, ['app/views']
 set :static, true
-set :public, 'app/assets'
 
 helpers do
   def stylesheet_link_tag(name)
@@ -13,4 +13,9 @@ end
 
 get '/' do
   erb :"flutie/styleguides/show", :layout => :"layouts/flutie"
+end
+
+get '/stylesheets/flutie.css' do
+  content_type 'text/css', :charset => 'utf-8'
+  scss :_flutie, :views => 'app/assets/stylesheets'
 end
