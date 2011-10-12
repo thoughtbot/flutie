@@ -22,7 +22,10 @@ After you've bundled, if you are using rails 3.1 or greater with asset pipelinin
 
     @import 'flutie';
 
-as a sass import in the application stylesheet manifest (app/assets/stylesheets/application.css).
+as a sass import in the application stylesheet manifest (app/assets/stylesheets/application.css.scss).
+
+If this is a new Rails 3.1 project you will need to rename the application.css manifest to application.css.scss so it is processed
+by the asset pipeline and sass to perform the @import.
 
 ### Rails 3
 
