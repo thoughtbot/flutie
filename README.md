@@ -16,7 +16,7 @@ Flutie is recommended to be run as a gem and included in your Gemfile:
 
     gem "flutie"
 
-### Rails 3.1
+### Rails 3.1 & Rails 3.2
 
 After you've bundled, if you are using rails 3.1 or greater with asset pipelining enabled, simply add:
 
@@ -24,7 +24,7 @@ After you've bundled, if you are using rails 3.1 or greater with asset pipelinin
 
 as a sass import in the application stylesheet manifest (app/assets/stylesheets/application.css.scss).
 
-If this is a new Rails 3.1 project you will need to rename the application.css manifest to application.css.scss so it is processed
+If this is a new Rails 3.1 or 3.2 project you will need to rename the application.css manifest to application.css.scss so it is processed
 by the asset pipeline and sass to perform the @import.
 
 ### Rails 3.0
