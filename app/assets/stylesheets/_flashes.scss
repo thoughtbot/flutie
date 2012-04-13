@@ -1,11 +1,13 @@
 /* Success, error & notice boxes for messages and errors. */
 div.error, div.notice, div.success, #flash_failure, #flash_success, #flash_notice {
   border: 1px solid #ddd;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  margin-bottom: 12px;
-  padding: 10px;
+  -moz-border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  border-radius: .5rem;
+  margin-bottom: .75em;
+  margin-bottom: .75rem;
+  padding: .75em;
+  padding: .75rem;
 }
 
 div.error, #flash_failure {
