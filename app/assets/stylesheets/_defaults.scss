@@ -1,6 +1,6 @@
 body {
   color: #333;
-  font-size: 13px;
+  font-size: 100%;
   font-family: "helvetica neue", arial, helvetica, "lucida grande", sans-serif;
 }
 
@@ -14,8 +14,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Use a .box to create a padded box inside a column.  */
 .box {
   background: #eee;
-  margin-bottom: 16px;
-  padding: 16px;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 /* Use this to create a horizontal ruler across a column. */
@@ -26,7 +26,7 @@ hr {
   color: #ddd;
   float: none;
   height: 1px;
-  margin: 0 0 12px;
+  margin: 0 0 .75rem;
   width: 100%;
 }
 
