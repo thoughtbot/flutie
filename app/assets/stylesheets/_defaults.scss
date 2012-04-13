@@ -14,7 +14,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Use a .box to create a padded box inside a column.  */
 .box {
   background: #eee;
+  margin-bottom: 1em;
   margin-bottom: 1rem;
+  padding: 1em;
   padding: 1rem;
 }
 

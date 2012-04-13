@@ -11,6 +11,7 @@ input[type="submit"]::-moz-focus-inner {
 
 form ol {
   list-style: none;
+  margin: 0 0 .75em 0;
   margin: 0 0 .75rem 0;
 }
 
@@ -20,12 +21,14 @@ form ol ol {
 
 form ol li {
   list-style-position: outside;
+  margin: 0 0 .75em 0;
   margin: 0 0 .75rem 0;
 }
 
 /*list-style-position fixes IE label margin bug*/
 form ol ol li {
   list-style-position: outside;
+  margin: 0 0 .25em 0;
   margin: 0 0 .25rem 0;
 }
 
@@ -40,6 +43,7 @@ p.inline-errors {
 form ol li.file {
   background: #e1e1e1;
   border: 1px solid #c8c8c8;
+  padding: .75em;
   padding: .75rem;
 }
 
@@ -66,7 +70,9 @@ a.cancel {
 
 .inline-hints {
   color: #666;
+  font-size: .75em;
   font-size: .75rem;
+  margin-bottom: .25em;
   margin-bottom: .25rem;
 }
 
@@ -74,7 +80,9 @@ a.cancel {
 fieldset {
   background: #f1f1f1;
   border: 1px solid #e3e3e3;
+  margin: 0 0 1em 0;
   margin: 0 0 1rem 0;
+  padding: 1rem 1rem .75em 1em;
   padding: 1rem 1rem .75rem 1rem;
 }
 
@@ -86,7 +94,10 @@ fieldset fieldset, fieldset fieldset fieldset {
 legend {
   font-weight: bold;
 }
-.ie6 legend, .ie7 legend { margin-left: .5rem; }
+.ie6 legend, .ie7 legend { 
+  margin-left: .5em; 
+  margin-left: .5rem; 
+}
 
 fieldset.buttons {
   background: inherit;
@@ -120,6 +131,7 @@ input[type="time"],
 input[type="url"],
 input[type="week"] {
   font-size: inherit;
+  padding: .25em;
   padding: .25rem;
 }
 .ie6 input {
@@ -132,6 +144,7 @@ input[disabled='disabled'] {
 }
 
 input[type="checkbox"] {
+  margin: 0 .25em 0 0;
   margin: 0 .25rem 0 0;
   position: relative;
   vertical-align: middle;
@@ -141,6 +154,7 @@ input[type="checkbox"] {
 }
 
 input[type="radio"] {
+  margin: 0 .25em 0 0;
   margin: 0 .25rem 0 0;
   position: relative;
   vertical-align: middle;
@@ -159,17 +173,21 @@ input[type="radio"] {
 /* Textareas */
 textarea {
   font-size: inherit;
+  margin: 0 .5em .5em 0;
   margin: 0 .5rem .5rem 0;
+  padding: .5em;
   padding: .5rem;
   overflow: auto;
 }
 
 /* Select fields */
 fieldset .select select {
+  font-size: .75em;
   font-size: .75rem;
 }
 
 optgroup {
+  margin: 0 0 .5em 0;
   margin: 0 0 .5rem 0;
 }
 
