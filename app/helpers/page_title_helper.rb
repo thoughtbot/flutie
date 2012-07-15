@@ -5,7 +5,7 @@ module PageTitleHelper
     separator = options[:separator] || ' : '
 
     if content_for?(page_title_symbol)
-      [app_name, content_for(page_title_symbol)].join(separator)
+      [app_name, content_for(page_title_symbol)].join(separator).html_safe
     else
       app_name
     end
