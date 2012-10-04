@@ -9,7 +9,7 @@ end
 directory = File.dirname(__FILE__)
 
 namespace :flutie do
-  desc 'install flutie stylesheets into public/ directory'
+  desc 'Install flutie stylesheets into the public/ directory'
   task :install => :environment do
     if Rails.application.config.respond_to?(:assets) && Rails.application.config.assets.enabled
       # No copy is needed when asset pipelining is enabled
