@@ -46,10 +46,7 @@ GEM
     libwebsocket (0.1.7.1)
       addressable
       websocket
-    metaclass (0.0.1)
     mime-types (1.19)
-    mocha (0.13.1)
-      metaclass (~> 0.0.1)
     multi_json (1.5.0)
     nokogiri (1.5.5)
     rack (1.4.1)
@@ -106,7 +103,6 @@ DEPENDENCIES
   appraisal
   capybara (>= 0.4.0)
   flutie!
-  mocha
   rspec-rails
   sass
   sqlite3

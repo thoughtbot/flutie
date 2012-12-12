@@ -21,5 +21,4 @@ Gem::Specification.new do |s|
   s.add_development_dependency('capybara', '>= 0.4.0')
   s.add_development_dependency('sqlite3')
   s.add_development_dependency('sass')
-  s.add_development_dependency('mocha')
 end
