@@ -1,5 +1,5 @@
 require 'flutie/version'
 
 module Flutie
-  require 'flutie/engine' if defined?(Rails)
+  require 'flutie/railtie' if defined?(Rails)
 end

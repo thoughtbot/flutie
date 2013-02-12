@@ -1,6 +1,9 @@
+require 'flutie/body_class_helper'
+require 'flutie/page_title_helper'
+
 module Flutie
 
-  class Engine < Rails::Engine
+  class Railtie < Rails::Railtie
     initializer 'page_title.helper' do |app|
       ActionView::Base.send :include, PageTitleHelper
     end
