@@ -6,4 +6,4 @@ rvm:
 gemfile:
   - gemfiles/rails_3.0.20.gemfile
   - gemfiles/rails_3.1.11.gemfile
-  - gemfiles/rails_3.2.11.gemfile
+  - gemfiles/rails_3.2.12.gemfile
