@@ -3,14 +3,16 @@ Flutie
 
 [![Build Status](https://secure.travis-ci.org/thoughtbot/flutie.png)](http://travis-ci.org/thoughtbot/flutie)
 
-Extra view helpers for Rails applications.
+Flutie provides extra ActionView view helpers for use with Rails applications.  Previous versions created default application styles.
 
-We also have the [Bourbon](https://github.com/thoughtbot/bourbon) and [Neat](https://github.com/thoughtbot/neat) gems available.
+Please look to [Bourbon](https://github.com/thoughtbot/bourbon) and [Neat](https://github.com/thoughtbot/neat) gems for style defaults now.
 
 Installation & Upgrading
 ------------------------
 
-Flutie is a Rails engine. It works with versions of Rails greater than 3.0.  Flutie is recommended to be run as a gem and included in your Gemfile:
+Flutie is a Railtie meant for use with Rails. It works with versions of Rails greater than 3.0.
+
+Flutie is recommended to be run as a gem and included in your Gemfile:
 
     gem 'flutie'
 
@@ -57,8 +59,6 @@ Anything which has been added via `content_for(:extra_body_classes)` will be add
 
 Suggestions, Bugs, Refactoring?
 -------------------------------
-
-Fork away and create a [Github Issue](http://github.com/thoughtbot/flutie/issues). Please don't send pull requests.
 
 Please see CONTRIBUTING.md for details.
 
