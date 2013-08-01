@@ -1,6 +1,5 @@
 language: ruby
 rvm:
-  - 1.9.2
   - 1.9.3
   - 2.0.0
 gemfile:
@@ -8,7 +7,3 @@ gemfile:
   - gemfiles/rails_3.1.gemfile
   - gemfiles/rails_3.2.gemfile
   - gemfiles/rails_4.0.gemfile
-matrix:
-  allow_failures:
-    - gemfile: gemfiles/rails_4.0.gemfile
-    - rvm: 2.0.0
