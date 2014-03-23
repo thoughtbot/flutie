@@ -3,55 +3,60 @@ Flutie
 
 [![Build Status](https://secure.travis-ci.org/thoughtbot/flutie.png)](http://travis-ci.org/thoughtbot/flutie)
 
-Flutie provides extra ActionView view helpers for use with Rails applications.  Previous versions created default application styles.
+Flutie is a Rails Engine that provides common `ActionView` view helpers.
+It works with Rails > 3.0.
 
-Please look to [Bourbon](https://github.com/thoughtbot/bourbon) and [Neat](https://github.com/thoughtbot/neat) gems for style defaults now.
+Previous versions created default application styles. We now use
+[Bourbon](https://github.com/thoughtbot/bourbon) and
+[Neat](https://github.com/thoughtbot/neat) styles.
 
-Installation & Upgrading
-------------------------
+Install
+-------
 
-Flutie is a Railtie meant for use with Rails. It works with versions of Rails greater than 3.0.
-
-Flutie is recommended to be run as a gem and included in your Gemfile:
+Add Flutie to your Gemfile:
 
     gem 'flutie'
 
 Helpers
 -------
 
-Flutie provides several helper methods for layouts as well.
+The `page_title` and `page_description` methods can be used like:
 
-#### page_title
+    <%= page_description %>
+    <%= page_title %>
 
-The `page_title` method can be used like:
+By default, Flutie will create empty tags:
 
-    <title><%= page_title %></title>
+    <meta name="description" content="">
+    <title></title>
 
-By default, it will produce results like:
+Define your page titles and descriptions using [Rails
+internationalization][i18n]:
 
-    <title>Appname : page title</title>
+[i18n]: http://guides.rubyonrails.org/i18n.html
 
-* "App name" comes from the module name of the rails application created by your app, i.e. `Appname::Application` will produce "Appname"
-* "page" comes from trying `content_for(:page_title)` and assumes you are using `content_for` with `:page_title` symbol on your pages.
-* The separator defaults to " : "
-
-These can be overridden by passing an options hash including `:app_name`, `:page_title_symbol` and `:separator` hash keys, ie:
-
-    content_for(:site_page_title, 'My title of my page')
-    page_title(:app_name => 'My app name', :page_title_symbol => :site_page_title, :separator => " | ")
-    => "My app name | My title of my page"
-
-#### body_class
+    en:
+      projects:
+        new:
+          page_title:
+            New Project
+        edit:
+          page_description:
+            '%{project.description}'
+          page_title:
+            'Edit %{project}'
 
 The `body_class` method can be used like:
 
     <body class="<%= body_class %>">
 
-This will produce a string including the controller name and controller-action name.  For example, The WidgetsController#show action would produce:
+This will produce a string including the controller name and controller-action
+name. For example, The `WidgetsController#show` action would produce:
 
     <body class="widgets widgets-show">
 
-Anything which has been added via `content_for(:extra_body_classes)` will be added to the end, for example:
+Anything which has been added via `content_for(:extra_body_classes)` will be
+added to the end, for example:
 
     content_for(:extra_body_classes, 'special-page')
     <body class="<%= body_class %>">
@@ -67,13 +72,15 @@ Credits
 
 ![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
 
-Flutie is maintained and funded by [thoughtbot, inc](http://thoughtbot.com/community)
+Flutie is maintained and funded by [thoughtbot, inc](http://thoughtbot.com).
 
-Thank you to all [the contributors](https://github.com/thoughtbot/flutie/contributors)!
+Thank you to all [the
+contributors](https://github.com/thoughtbot/flutie/contributors)!
 
 The names and logos for thoughtbot are trademarks of thoughtbot, inc.
 
 License
 -------
 
-Flutie is Copyright © 2010-2013 thoughtbot. It is free software, and may be redistributed under the terms specified in the LICENSE file.
+Flutie is Copyright © 2010-2014 thoughtbot. It is free software, and may be
+redistributed under the terms specified in the LICENSE file.
