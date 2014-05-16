@@ -44,7 +44,7 @@ These can be overridden by passing an options hash including `:app_name`, `:page
 You can also reverse the position of the app name and the :site_page_title using the :reverse option, ie:
 
     content_for(:site_page_title, 'My title of my page')
-    page_title(:app_name => 'My app name', :page_title_symbol => :site_page_title)
+    page_title(:app_name => 'My app name', :page_title_symbol => :site_page_title, :reverse => 1)
     => "My title of my page : My app name"
 
 #### body_class
