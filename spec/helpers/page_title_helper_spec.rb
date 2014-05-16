@@ -24,4 +24,9 @@ describe PageTitleHelper, type: :helper do
     subject { helper.page_title(page_title_symbol: :alt_page_title) }
     it { should == 'Flutie : page title' }
   end
+  describe 'in a reversed position' do
+    before { helper.content_for(:page_title, 'page title') }
+    subject { helper.page_title(reverse: true) }
+    it { should == 'page title : Flutie' }
+  end
 end
