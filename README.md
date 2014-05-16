@@ -60,7 +60,7 @@ using the :reverse option. For example:
 
 ```ruby
 content_for(:site_page_title, 'My title of my page')
-page_title(:app_name => 'My app name', :page_title_symbol => :site_page_title)
+page_title(:app_name => 'My app name', :page_title_symbol => :site_page_title, reverse: true)
 ```
 
 would produce:
