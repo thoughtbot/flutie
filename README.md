@@ -4,7 +4,7 @@
 
 Flutie provides some utility view helpers for use with Rails applications.
 
-There are helpers for setting a page title, creating timestamps, and generating body classes.
+There are helpers for setting a page title and for generating body classes.
 
 ## Installation & Upgrading
 
@@ -53,10 +53,6 @@ Anything which has been added via `content_for(:extra_body_classes)` will be add
     content_for(:extra_body_classes, 'special-page')
     <body class="<%= body_class %>">
     <body class="widgets widgets-show special-page">
-
-### Timestamp
-
-The `timestamp` method can used to generate HTML `<time>` elements.
 
 ## How to contribute
 
