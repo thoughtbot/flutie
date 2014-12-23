@@ -1,27 +1,24 @@
-Flutie
-======
+# Flutie
 
 [![Build Status](https://travis-ci.org/thoughtbot/flutie.svg?branch=master)](https://travis-ci.org/thoughtbot/flutie)
 
-Flutie provides extra ActionView view helpers for use with Rails applications.  Previous versions created default application styles.
+Flutie provides some utility view helpers for use with Rails applications.
 
-Please look to [Bourbon](https://github.com/thoughtbot/bourbon) and [Neat](https://github.com/thoughtbot/neat) gems for style defaults now.
+There are helpers for setting a page title, creating timestamps, and generating body classes.
 
-Installation & Upgrading
-------------------------
+## Installation & Upgrading
 
-Flutie is a Railtie meant for use with Rails. It works with versions of Rails greater than 3.0.
+Flutie is a Railtie and works with versions of Rails greater than 3.0.
 
-Flutie is recommended to be run as a gem and included in your Gemfile:
+It should be run as a gem and included in your `Gemfile`:
 
     gem 'flutie'
 
-Helpers
--------
+## Helpers
 
-Flutie provides several helper methods for layouts as well.
+Flutie provides helper methods for use within Rails application layouts and views.
 
-#### page_title
+### Page Title
 
 The `page_title` method can be used like:
 
@@ -41,7 +38,7 @@ These can be overridden by passing an options hash including `:app_name`, `:page
     page_title(:app_name => 'My app name', :page_title_symbol => :site_page_title, :separator => " | ")
     => "My app name | My title of my page"
 
-#### body_class
+### Body Class
 
 The `body_class` method can be used like:
 
@@ -57,23 +54,24 @@ Anything which has been added via `content_for(:extra_body_classes)` will be add
     <body class="<%= body_class %>">
     <body class="widgets widgets-show special-page">
 
-Suggestions, Bugs, Refactoring?
--------------------------------
+### Timestamp
 
-Please see CONTRIBUTING.md for details.
+The `timestamp` method can used to generate HTML `<time>` elements.
 
-Credits
--------
+## How to contribute
+
+Please see the [CONTRIBUTING](CONTRIBUTING.md) file for details.
+
+## Credits
 
 ![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
 
-Flutie is maintained and funded by [thoughtbot, inc](http://thoughtbot.com/community)
+Flutie is maintained and funded by [thoughtbot, inc](http://thoughtbot.com/community).
 
 Thank you to all [the contributors](https://github.com/thoughtbot/flutie/contributors)!
 
 The names and logos for thoughtbot are trademarks of thoughtbot, inc.
 
-License
--------
+## License
 
 Flutie is Copyright © 2010, 2011, 2012, 2013, 2014 thoughtbot, inc.  It is free software, and may be redistributed under the terms specified in the LICENSE file.
