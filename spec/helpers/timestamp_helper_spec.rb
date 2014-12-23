@@ -1,34 +1,34 @@
-require 'spec_helper'
+require 'rails_helper'
 
-describe TimestampHelper, '#timestamp' do
+describe TimestampHelper, '#timestamp', type: :helper do
   it 'creates a time tag with a datetime and the relative date' do
     time = 10.minutes.ago
 
     tag = Capybara.string(timestamp(time)).find('time')
 
-    tag.should have_content(time_ago_in_words(time))
-    tag[:title].should eq(l(time))
-    tag[:datetime].should eq(time.to_s)
+    expect(tag).to have_content(time_ago_in_words(time))
+    expect(tag[:title]).to eq(l(time))
+    expect(tag[:datetime]).to eq(time.to_s)
   end
 
   context 'with optional arguments' do
     it 'uses tag rather than a <time>' do
       tag = Capybara.string timestamp(1.minute.ago, :tag => :span)
 
-      tag.should have_css('span')
+      expect(tag).to have_css('span')
     end
 
     it 'skips the title attribute when :title => false' do
       tag = Capybara.string timestamp(1.minute.ago, :title => false)
 
-      tag.find('time')[:title].should be_blank
+      expect(tag.find('time')[:title]).to be_blank
     end
 
     it 'does not mutate the options hash' do
       options = { :tag => :foo }
       timestamp(1.minute.ago, options)
 
-      options[:tag].should == :foo
+      expect(options[:tag]).to eq :foo
     end
   end
 end
