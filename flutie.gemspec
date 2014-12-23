@@ -5,6 +5,7 @@ require 'flutie/version'
 Gem::Specification.new do |s|
   s.name        = 'flutie'
   s.version     = Flutie::VERSION.dup
+  s.licenses    = ['MIT']
   s.authors     = ['Matt Jankowski', 'Chad Pytel', 'Kevin Burg', 'Chad Mazzola', 'Phil LaPier', 'Dan Croak', 'Mike Burns', 'Fred Yates', 'OZAWA Sakuro', 'Gabe Berke-Williams', 'Caleb Thompson', 'Greg Sterndale', 'Matthew Burket', 'Joe Ferris', 'Edwin Morris', 'Tom Crinson', 'Emilien Taque', 'Galen Frechette', 'J. Edward Dewyea', 'Nick Quaranto', 'Aaron Suggs']
 
   s.email       = ['support@thoughtbot.com']
