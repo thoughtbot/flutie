@@ -5,7 +5,8 @@ require 'flutie/version'
 Gem::Specification.new do |s|
   s.name        = 'flutie'
   s.version     = Flutie::VERSION.dup
-  s.authors     = ['Matt Jankowski', 'Chad Pytel', 'Kevin Burg', 'Chad Mazzola', 'Phil LaPier', 'Dan Croak', 'Fred Yates', 'OZAWA Sakuro', 'Mike Burns', 'Greg Sterndale', 'Joe Ferris', 'J. Edward Dewyea', 'Emilien Taque', 'Aaron Suggs', 'Nick Quaranto']
+  s.authors     = ['Matt Jankowski', 'Chad Pytel', 'Kevin Burg', 'Chad Mazzola', 'Phil LaPier', 'Dan Croak', 'Mike Burns', 'Fred Yates', 'OZAWA Sakuro', 'Gabe Berke-Williams', 'Caleb Thompson', 'Greg Sterndale', 'Matthew Burket', 'Joe Ferris', 'Edwin Morris', 'Tom Crinson', 'Emilien Taque', 'Galen Frechette', 'J. Edward Dewyea', 'Nick Quaranto', 'Aaron Suggs']
+
   s.email       = ['support@thoughtbot.com']
   s.homepage    = 'http://github.com/thoughtbot/flutie'
   s.summary     = 'Flutie provides extra Rails view helpers'
