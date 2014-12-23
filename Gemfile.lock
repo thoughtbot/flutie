@@ -93,7 +93,7 @@ PLATFORMS
 
 DEPENDENCIES
   appraisal (~> 1.0)
-  capybara
+  capybara (~> 2.4.0)
   flutie!
   rspec-rails (~> 3.1)
   sqlite3 (~> 1.3)
