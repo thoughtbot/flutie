@@ -1,7 +1,7 @@
 Flutie
 ======
 
-[![Build Status](https://secure.travis-ci.org/thoughtbot/flutie.png)](http://travis-ci.org/thoughtbot/flutie)
+[![Build Status](https://travis-ci.org/thoughtbot/flutie.svg?branch=master)](https://travis-ci.org/thoughtbot/flutie)
 
 Flutie provides extra ActionView view helpers for use with Rails applications.  Previous versions created default application styles.
 
