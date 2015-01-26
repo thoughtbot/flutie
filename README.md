@@ -8,11 +8,13 @@ There are helpers for setting a page title and for generating body classes.
 
 ## Installation & Upgrading
 
-Flutie is a Railtie and works with versions of Rails greater than 3.0.
+Flutie is a Railtie.
+We support the versions of Ruby and Rails
+listed in [.travis.yml](.travis.yml).
 
 It should be run as a gem and included in your `Gemfile`:
 
-    gem 'flutie'
+    gem "flutie"
 
 ## Helpers
 
@@ -70,4 +72,7 @@ The names and logos for thoughtbot are trademarks of thoughtbot, inc.
 
 ## License
 
-Flutie is Copyright © 2010, 2011, 2012, 2013, 2014 thoughtbot, inc.  It is free software, and may be redistributed under the terms specified in the LICENSE file.
+Flutie is Copyright © 2010-2015 thoughtbot, inc.
+It is free software,
+and may be redistributed under
+the terms specified in the [LICENSE](LICENSE) file.
