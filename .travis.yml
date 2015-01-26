@@ -11,3 +11,6 @@ matrix:
   exclude:
     - rvm: 2.2.0
       gemfile: gemfiles/rails_4.0.0.gemfile
+notifications:
+  email: false
+sudo: false
