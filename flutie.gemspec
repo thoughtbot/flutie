@@ -13,9 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = 'Flutie provides extra Rails view helpers'
   s.description = 'Flutie is a starting point for personal discovery'
 
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  s.files         = `git ls-files -z`.split("\x0").reject { |f| f =~ %r(^(spec|gemfiles|bin)/) }
   s.require_paths = ['lib']
 
   s.add_development_dependency('appraisal', '~> 1.0')
