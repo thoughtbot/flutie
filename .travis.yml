@@ -1,10 +1,24 @@
 language: ruby
+sudo: false
+cache: bundler
 rvm:
-  - 2.1.5
-  - 2.2.0
+  - 2.3.1
+  - 2.2.5
+  - 2.1
+  - 2.0
+  - ruby-head
 gemfile:
-  - gemfiles/rails_4.1.0.gemfile
-  - gemfiles/rails_4.2.0.gemfile
+  - gemfiles/rails_5.0.0.gemfile
+  - gemfiles/rails_4.2.7.gemfile
+  - gemfiles/rails_4.1.16.gemfile
+matrix:
+  fast_finish: true
+  allow_failures:
+    - rvm: ruby-head
+  exclude:
+    - gemfile: gemfiles/rails_5.0.0.gemfile
+      rvm: 2.1
+    - gemfile: gemfiles/rails_5.0.0.gemfile
+      rvm: 2.0
 notifications:
   email: false
-sudo: false
