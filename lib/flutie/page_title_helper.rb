@@ -4,10 +4,6 @@ module PageTitleHelper
     page_title_symbol = options[:page_title_symbol] || :page_title
     separator = options[:separator] || ' : '
 
-    if content_for?(page_title_symbol)
-      [app_name, content_for(page_title_symbol)].join(separator)
-    else
-      app_name
-    end
+    [app_name, content_for(page_title_symbol)].compact.join(separator)
   end
 end
