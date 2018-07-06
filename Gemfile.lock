@@ -57,7 +57,7 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
-    rspec-core (3.2.1)
+    rspec-core (3.2.3)
       rspec-support (~> 3.2.0)
     rspec-expectations (3.2.0)
       diff-lcs (>= 1.2.0, < 2.0)
