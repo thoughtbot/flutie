@@ -6,7 +6,29 @@ Gem::Specification.new do |s|
   s.name        = 'flutie'
   s.version     = Flutie::VERSION.dup
   s.licenses    = ['MIT']
-  s.authors     = ['Matt Jankowski', 'Chad Pytel', 'Kevin Burg', 'Chad Mazzola', 'Phil LaPier', 'Dan Croak', 'Mike Burns', 'Fred Yates', 'OZAWA Sakuro', 'Gabe Berke-Williams', 'Caleb Thompson', 'Greg Sterndale', 'Matthew Burket', 'Joe Ferris', 'Edwin Morris', 'Tom Crinson', 'Emilien Taque', 'Galen Frechette', 'J. Edward Dewyea', 'Nick Quaranto', 'Aaron Suggs']
+  s.authors     = <<-AUTHORS.split("\n")
+    Aaron Suggs
+    Caleb Thompson
+    Chad Mazzola
+    Chad Pytel
+    Dan Croak
+    Edwin Morris
+    Emilien Taque
+    Fred Yates
+    Gabe Berke-Williams
+    Galen Frechette
+    Greg Sterndale
+    J. Edward Dewyea
+    Joe Ferris
+    Kevin Burg
+    Matt Jankowski
+    Matthew Burket
+    Mike Burns
+    Nick Quaranto
+    OZAWA Sakuro
+    Phil LaPier
+    Tom Crinson
+  AUTHORS
 
   s.email       = ['support@thoughtbot.com']
   s.homepage    = 'http://github.com/thoughtbot/flutie'
