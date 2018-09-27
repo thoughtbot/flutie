@@ -1,6 +1,7 @@
 require 'flutie/body_class'
 require 'flutie/body_class_helper'
 require 'flutie/page_title'
+require 'flutie/page_title_presenter'
 require 'flutie/page_title_helper'
 
 # :nodoc:
