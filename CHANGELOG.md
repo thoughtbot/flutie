@@ -7,6 +7,7 @@ News
 
 - Spec coverage for Ruby 2.0 and Rails 4.0
 - Setup script for easier development
+- Add `reverse` option for `page_title` which switches order of parts
 
 ### Removed
 
