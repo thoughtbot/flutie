@@ -1,7 +1,8 @@
-News
-====
+# Changelog
 
-## Unreleased
+## [Unreleased]
+
+## [2.1.0] - 2018-09-27
 
 ### Added
 
@@ -18,7 +19,7 @@ News
 
 - Reduce gem file size by excluding unnecessary files from release
 
-## 2.0.0
+## [2.0.0] - 2013-02-12
 
 ### Removed
 
@@ -27,3 +28,7 @@ News
 ### Changed
 
 - Convert from Rails Engine to Railtie
+
+[Unreleased]: https://github.com/thoughtbot/flutie/compare/v2.1.0...HEAD
+[2.1.0]: https://github.com/thoughtbot/flutie/compare/v2.0.0...v2.1.0
+[2.0.0]: https://github.com/thoughtbot/flutie/compare/v1.3.4...v2.0.0
