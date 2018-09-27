@@ -13,7 +13,9 @@ Flutie is a Railtie. We support the versions of Ruby and Rails listed in
 
 It should be run as a gem and included in your `Gemfile`:
 
-    gem "flutie"
+```ruby
+gem "flutie"
+```
 
 ## Helpers
 
@@ -23,11 +25,15 @@ Flutie provides helper methods for use within Rails layouts and views.
 
 The `page_title` method can be used like:
 
-    <title><%= page_title %></title>
+```erb
+<title><%= page_title %></title>
+```
 
 By default, it will produce results like:
 
-    <title>Appname : page title</title>
+```html
+<title>Appname : page title</title>
+```
 
 * "App name" comes from the module name of the rails application created by your
   app, i.e. `Appname::Application` will produce "Appname"
@@ -36,29 +42,47 @@ By default, it will produce results like:
 * The separator defaults to " : "
 
 These can be overridden by passing an options hash including `:app_name`,
-`:page_title_symbol` and `:separator` hash keys, ie:
+`:page_title_symbol` and `:separator` hash keys. For example:
 
-    content_for(:site_page_title, 'My title of my page')
-    page_title(:app_name => 'My app name', :page_title_symbol => :site_page_title, :separator => " | ")
-    => "My app name | My title of my page"
+```ruby
+content_for(:site_page_title, 'My title of my page')
+page_title(:app_name => 'My app name', :page_title_symbol => :site_page_title, :separator => " | ")
+```
+
+would produce:
+
+```html
+<title>My app name | My title of my page</title>
+```
 
 ### Body Class
 
-The `body_class` method can be used like:
+The `body_class` method can be used like this in a layout:
 
-    <body class="<%= body_class %>">
+```erb
+<body class="<%= body_class %>">
+```
 
 This will produce a string including the controller name and controller-action
-name.  For example, The WidgetsController#show action would produce:
+name pair.  For example, The `WidgetsController#show` action would produce:
 
-    <body class="widgets widgets-show">
+```html
+<body class="widgets widgets-show">
+```
 
 Anything which has been added via `content_for(:extra_body_classes)` will be
-added to the end, for example:
+added to the end, for example views like:
 
-    content_for(:extra_body_classes, 'special-page')
-    <body class="<%= body_class %>">
-    <body class="widgets widgets-show special-page">
+```erb
+content_for(:extra_body_classes, 'special-page')
+<body class="<%= body_class %>">
+```
+
+would produce:
+
+```html
+<body class="widgets widgets-show special-page">
+```
 
 ## How to contribute
 
