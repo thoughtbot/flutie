@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.files         = `git ls-files -z`.split("\x0").reject { |f| f =~ %r(^(spec|gemfiles|bin)/) }
   s.require_paths = ['lib']
 
-  s.add_development_dependency('appraisal')
+  s.add_development_dependency('appraisal', '~> 2.2')
   s.add_development_dependency('sqlite3', '~> 1.3')
   s.add_development_dependency('rspec-rails', '~> 3.7')
 end
