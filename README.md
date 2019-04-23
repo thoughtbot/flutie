@@ -104,18 +104,20 @@ Please see the [CONTRIBUTING](CONTRIBUTING.md) file for details.
 
 ## Credits
 
-![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
+[![thoughtbot][thoughtbot-logo]][thoughtbot]
 
-Flutie is maintained and funded by [thoughtbot, inc].
+Flutie is maintained and funded by [thoughtbot, inc][thoughtbot].
 
 Thank you to all [the contributors]!
 
 The names and logos for thoughtbot are trademarks of thoughtbot, inc.
+
+[thoughtbot]: https://thoughtbot.com?utm_source=github
+[thoughtbot-logo]: http://presskit.thoughtbot.com/images/thoughtbot-logo-for-readmes.svg
 
 ## License
 
 Flutie is Copyright © 2010 thoughtbot, inc. It is free software, and may be
 redistributed under the terms specified in the [LICENSE](LICENSE) file.
 
-[thoughtbot, inc]: http://thoughtbot.com/community
 [the contributors]: https://github.com/thoughtbot/flutie/contributors
