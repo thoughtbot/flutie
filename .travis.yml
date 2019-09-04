@@ -11,4 +11,3 @@ gemfile:
   - gemfiles/rails_6.0.gemfile
 notifications:
   email: false
-sudo: false
