@@ -6,6 +6,10 @@
 
 - Add support for Rails 6
 
+### Removed
+
+- Dropped support for Rails prior to 5.0.0
+
 ## [2.1.0] - 2018-09-27
 
 ### Added
