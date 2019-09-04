@@ -17,5 +17,5 @@ notifications:
 
 matrix:
   exclude:
-    - rvm: 2.4.6
+    - rvm: 2.4.7
       gemfile: gemfiles/rails_6.0.gemfile
