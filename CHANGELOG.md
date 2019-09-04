@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Added
+
+- Add support for Rails 6
+
 ## [2.1.0] - 2018-09-27
 
 ### Added
