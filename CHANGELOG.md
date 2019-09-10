@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [2.2.0] - 2019-09-10
 
 ### Added
 
@@ -38,6 +38,6 @@
 
 - Convert from Rails Engine to Railtie
 
-[Unreleased]: https://github.com/thoughtbot/flutie/compare/v2.1.0...HEAD
+[2.2.0]: https://github.com/thoughtbot/flutie/compare/v2.1.0...v2.2.0
 [2.1.0]: https://github.com/thoughtbot/flutie/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/thoughtbot/flutie/compare/v1.3.4...v2.0.0
