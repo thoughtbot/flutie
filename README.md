@@ -55,8 +55,8 @@ would produce:
 <title>My app name | My title of my page</title>
 ```
 
-You can also reverse the position of the app name and the :site_page_title
-using the :reverse option. For example:
+You can also reverse the position of the `:app_name` and the `:site_page_title`
+values by using the `:reverse` option. For example:
 
 ```ruby
 content_for(:site_page_title, 'My title of my page')
