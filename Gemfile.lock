@@ -44,7 +44,7 @@ GEM
     minitest (5.13.0)
     nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
-    rack (2.0.8)
+    rack (2.1.1)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails-dom-testing (2.0.3)
