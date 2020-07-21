@@ -32,7 +32,7 @@ GEM
     builder (3.2.4)
     concurrent-ruby (1.1.6)
     crass (1.0.6)
-    diff-lcs (1.4.3)
+    diff-lcs (1.4.4)
     erubi (1.9.0)
     i18n (1.8.4)
       concurrent-ruby (~> 1.0)
