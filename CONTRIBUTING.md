@@ -2,9 +2,11 @@
 
 We love pull requests. Here's a quick guide.
 
-Fork the repo:
+Fork the repo.
 
-    git clone git@github.com:thoughtbot/flutie.git
+Clone your fork:
+
+    git clone git@github.com:your-username/flutie.git
 
 Set up your machine:
 
