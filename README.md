@@ -1,6 +1,6 @@
 # Flutie
 
-[![Build Status](https://travis-ci.org/thoughtbot/flutie.svg?branch=master)](https://travis-ci.org/thoughtbot/flutie)
+# Flutie [![Build Status][ci-image]][ci] [![Gem Version][version-image]][version]
 
 Flutie provides some utility view helpers for use with Rails applications.
 
@@ -9,7 +9,7 @@ There are helpers for setting a page title and for generating body classes.
 ## Installation & Upgrading
 
 Flutie is a Railtie. We support the versions of Ruby and Rails listed in
-[.travis.yml](.travis.yml).
+[.github/workflows/build.yml](.github/workflows/build.yml).
 
 It should be run as a gem and included in your `Gemfile`:
 
@@ -46,7 +46,7 @@ These can be overridden by passing an options hash including `:app_name`,
 
 ```ruby
 content_for(:site_page_title, 'My title of my page')
-page_title(:app_name => 'My app name', :page_title_symbol => :site_page_title, :separator => " | ")
+page_title(app_name: 'My app name', page_title_symbol: :site_page_title, separator: " | ")
 ```
 
 would produce:
@@ -60,7 +60,7 @@ values by using the `:reverse` option. For example:
 
 ```ruby
 content_for(:site_page_title, 'My title of my page')
-page_title(:app_name => 'My app name', :page_title_symbol => :site_page_title, reverse: true)
+page_title(app_name: 'My app name', page_title_symbol: :site_page_title, reverse: true)
 ```
 
 would produce:
@@ -98,9 +98,13 @@ would produce:
 <body class="widgets widgets-show special-page">
 ```
 
-## How to contribute
+## Contributing
 
-Please see the [CONTRIBUTING](CONTRIBUTING.md) file for details.
+See the [CONTRIBUTING] document.
+Thank you, [contributors]!
+
+[CONTRIBUTING]: CONTRIBUTING.md
+[contributors]: https://github.com/thoughtbot/flutie/graphs/contributors
 
 ## Credits
 
@@ -121,3 +125,25 @@ Flutie is Copyright © 2010 thoughtbot, inc. It is free software, and may be
 redistributed under the terms specified in the [LICENSE](LICENSE) file.
 
 [the contributors]: https://github.com/thoughtbot/flutie/contributors
+
+<!-- START /templates/footer.md -->
+## About thoughtbot
+
+![thoughtbot](https://thoughtbot.com/thoughtbot-logo-for-readmes.svg)
+
+This repo is maintained and funded by thoughtbot, inc.
+The names and logos for thoughtbot are trademarks of thoughtbot, inc.
+
+We love open source software!
+See [our other projects][community].
+We are [available for hire][hire].
+
+[community]: https://thoughtbot.com/community?utm_source=github
+[hire]: https://thoughtbot.com/hire-us?utm_source=github
+
+<!-- END /templates/footer.md -->
+
+[ci-image]: https://github.com/thoughtbot/flutie/actions/workflows/build.yml/badge.svg?branch=main
+[ci]: https://github.com/thoughtbot/flutie/actions?query=workflow%3ABuild+branch%3Amain
+[version-image]: https://badge.fury.io/rb/flutie.svg
+[version]: https://badge.fury.io/rb/flutie
