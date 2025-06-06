@@ -1,0 +1,55 @@
+name: Build
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: Ruby ${{ matrix.ruby }} / Rails ${{ matrix.rails }}
+    strategy:
+      fail-fast: false
+      matrix:
+        ruby:
+          - "3.4"
+          - "3.3"
+          - "3.2"
+          - "3.1"
+          - "3.0"
+        rails:
+          - "6.1"
+          - "7.0"
+          - "7.1"
+          - "7.2"
+          - "8.0"
+          - main
+        exclude:
+          # Ruby 3.0 is supported up to Rails 6.1
+          - ruby: "3.0"
+            rails: "7.2"
+          - ruby: "3.0"
+            rails: "8.0"
+          - ruby: "3.0"
+            rails: "main"
+          # Ruby 3.1 is supported up to Rails 7.2
+          - ruby: "3.1"
+            rails: "8.0"
+          - ruby: "3.1"
+            rails: "main"
+
+
+
+    runs-on: 'ubuntu-latest'
+
+    env:
+      BUNDLE_GEMFILE: gemfiles/rails_${{ matrix.rails }}.gemfile
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+      - name: Setup project
+        run: bundle install
+      - name: Run test
+        run: bundle exec rake

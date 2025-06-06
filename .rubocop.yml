@@ -1,9 +1,0 @@
-AllCops:
-  Exclude:
-    - 'bin/{bundle,setup}'
-    - 'gemfiles/*'
-
-Metrics/BlockLength:
-  ExcludedMethods: ['describe', 'context']
-  Exclude:
-    - "flutie.gemspec"
