@@ -10,6 +10,6 @@ module PageTitleHelper
         page_title.separator,
         options[:reverse],
       ).to_s,
-    )
+    ).html_safe
   end
 end
