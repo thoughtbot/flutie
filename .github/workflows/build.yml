@@ -36,8 +36,9 @@ jobs:
             rails: "8.0"
           - ruby: "3.1"
             rails: "main"
-
-
+          # Ruby 3.2 is supported up to Rails 8.0
+          - ruby: "3.2"
+            rails: "main"
 
     runs-on: 'ubuntu-latest'
 
